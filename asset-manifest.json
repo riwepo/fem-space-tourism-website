@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/fem-space-tourism-website/static/css/main.073c9b0a.css",
+    "main.js": "/fem-space-tourism-website/static/js/main.351b4ef1.js",
+    "static/js/787.ec0c4487.chunk.js": "/fem-space-tourism-website/static/js/787.ec0c4487.chunk.js",
+    "static/media/logo.svg": "/fem-space-tourism-website/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/fem-space-tourism-website/index.html",
+    "main.073c9b0a.css.map": "/fem-space-tourism-website/static/css/main.073c9b0a.css.map",
+    "main.351b4ef1.js.map": "/fem-space-tourism-website/static/js/main.351b4ef1.js.map",
+    "787.ec0c4487.chunk.js.map": "/fem-space-tourism-website/static/js/787.ec0c4487.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.351b4ef1.js"
+  ]
+}
