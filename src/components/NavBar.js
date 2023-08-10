@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 import NavItem from "./NavItem";
 
@@ -21,7 +22,13 @@ function NavBar({ className, isOpen }) {
       <ul className={classes.list}>
         {navSpec.map((item) => {
           return (
-            <NavItem key={item.id} className={classes.navitem} item={item} />
+            <NavLink
+              key={item.id}
+              to={item.path}
+              children={({ isActive }) => {
+                return <NavItem item={item} isActive={isActive} />;
+              }}
+            />
           );
         })}
       </ul>

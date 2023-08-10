@@ -1,26 +1,19 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 
 import classes from "./NavItem.module.css";
 
-function NavItem({ className, item }) {
+function NavItem({ item, isActive }) {
+  console.log(item, isActive);
   return (
-    <li>
-      <div className={classes.container}>
-        <p className={classes.id}>{item.id}</p>
-        <NavLink
-          className={({ isActive }) => {
-            return isActive
-              ? `${classes.navLink} ${classes.navLinkActive}`
-              : classes.navLink;
-          }}
-          to={item.path}
-        >
-          {item.label}
-        </NavLink>
-        <div className={classes.activeIndicator}></div>
-      </div>
-    </li>
+    <div className={classes.container}>
+      <p className={classes.id}>{item.id}</p>
+      <p className={classes.label}>{item.label}</p>
+      <div
+        className={`${classes.indicator} ${
+          isActive ? classes.indicatorActive : undefined
+        }`}
+      ></div>
+    </div>
   );
 }
 
