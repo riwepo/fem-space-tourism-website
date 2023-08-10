@@ -1,5 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+
+import { createBrowserRouter } from "react-router-dom";
+
+createBrowserRouter([{ path: "/" }, { path: "" }, { path: "" }]);
 
 function App() {
   return (
