@@ -11,9 +11,9 @@ import classes from "./MainNavigation.module.css";
 function MainNavigation() {
   return (
     <header className={classes.header}>
-      <img src={logo} alt="space logo" />
+      <img className={classes.logo} src={logo} alt="space logo" />
       <NavBar />
-      <img src={iconHamburger} alt="hamgurger menu" />
+      <img className={classes.menu} src={iconHamburger} alt="hamgurger menu" />
     </header>
   );
 }
