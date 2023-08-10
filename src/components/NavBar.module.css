@@ -12,24 +12,15 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  padding-top: 8rem;
 }
 
 .list {
+  list-style: none;
+
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  list-style: none;
-}
-
-.navLink {
-  color: white;
-  text-decoration: none;
-  font: var(--nav-regular-27-space-font);
-  text-transform: uppercase;
-  font-weight: var(--regular-fontweight);
-  letter-spacing: 0.27rem;
-}
-
-.navLink.navLinkActive {
-  text-decoration: underline;
+  gap: 2rem;
 }
