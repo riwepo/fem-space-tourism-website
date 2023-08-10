@@ -7,6 +7,7 @@ function NavItem({ className, item }) {
   return (
     <li>
       <div className={classes.container}>
+        <p className={classes.id}>{item.id}</p>
         <NavLink
           className={({ isActive }) => {
             return isActive
@@ -17,6 +18,7 @@ function NavItem({ className, item }) {
         >
           {item.label}
         </NavLink>
+        <div className={classes.activeIndicator}></div>
       </div>
     </li>
   );

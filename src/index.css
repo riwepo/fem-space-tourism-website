@@ -1,24 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;600&family=Bellefair&display=swap");
 
 :root {
-  
   /* fonts */
-  --heading-1-regular-font: 150px "Bellefair", serif;
-  --heading-2-regular-font: 100px "Bellefair", serif;
-  --heading-3-regular-font: 56px "Bellefair", serif;
-  --heading-4-regular-font: 32px "Bellefair", serif;
-  --heading-5-regular-475-space-font: 28px "Barlow Condensed", serif;
-  --sub-heading-1-regular-font: 28px "Bellefair", serif;
-  --sub-heading-2-regular-235-space-font: 14px "Barlow Condensed", serif;
-  --nav-regular-27-space-font: 16px "Barlow Condensed", serif;
+  --heading-1-regular-font: 150px 400 "Bellefair", serif;
+  --heading-2-regular-font: 100px 400 "Bellefair", serif;
+  --heading-3-regular-font: 56px 400 "Bellefair", serif;
+  --heading-4-regular-font: 32px 400 "Bellefair", serif;
+  --heading-5-regular-475-space-font: 28px 400 "Barlow Condensed", serif;
+  --sub-heading-1-regular-font: 28px 400 "Bellefair", serif;
+  --sub-heading-2-regular-235-space-font: 14px 400 "Barlow Condensed", serif;
+  --nav-regular-27-space-font: 400 1.6rem "Barlow Condensed", serif;
+  --nav-semi-bold-27-space-font: 600 1.6rem "Barlow Condensed", serif;
 
   /* font weights */
   --regular-fontweight: 400;
 
   /* colors */
-  --black-color:#0b0d17;
-  --mauve-color: #d0d6f9
-  --white-color: #ffffff
+  --black-color: #0b0d17;
+  --mauve-color: #d0d6f9;
+  --white-color: #ffffff;
 }
 
 /* global reset */
@@ -28,7 +28,7 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   font-size: 62.5%;
   background-color: var(--black-color);
 
@@ -36,10 +36,8 @@ body{
 }
 
 /* for debugging */
-div, header, nav {
+div,
+header,
+nav {
   border: solid 1px red;
 }
-
-
-
-
