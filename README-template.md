@@ -62,7 +62,9 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-Learning how to pre-set fonts with CSS variables, including weight, size and family.
+How to pre-set a set of design fonts with CSS variables, including weight, size and family.
+
+How to use isActive passed to the children property of NavLink to alter display of active link.
 
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
