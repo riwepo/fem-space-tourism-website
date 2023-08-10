@@ -1,25 +1,19 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
+import NavBar from "./NavBar";
+
+import logo from "../assets/shared/logo.svg";
+import iconHamburger from "../assets/shared/icon-hamburger.svg";
+import iconClose from "../assets/shared/icon-close.svg";
+
+import classes from "./MainNavigation.module.css";
 
 function MainNavigation() {
   return (
-    <header>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/destination">Destination</Link>
-          </li>
-          <li>
-            <Link to="/crew">Crew</Link>
-          </li>
-          <li>
-            <Link to="/technology">Technology</Link>
-          </li>
-        </ul>
-      </nav>
+    <header className={classes.header}>
+      <img src={logo} alt="space logo" />
+      <NavBar />
+      <img src={iconHamburger} alt="hamgurger menu" />
     </header>
   );
 }
