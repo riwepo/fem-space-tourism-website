@@ -28,6 +28,11 @@
   box-sizing: border-box;
 }
 
+body{
+  font-size: 62.5%;
+  background-color: var(--black-color);
+}
+
 
 
 
