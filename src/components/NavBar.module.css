@@ -1,5 +1,22 @@
 .nav {
-  width: 100%;
+  display: none;
+}
+
+.nav.navOpen {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 2;
+  padding: 1rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: var(--dark-violet-color);
+  border-radius: 0.5rem;
 }
 
 .list {
@@ -10,6 +27,7 @@
 }
 
 .navLink {
+  color: white;
   text-decoration: none;
 }
 

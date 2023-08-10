@@ -3,9 +3,13 @@ import { NavLink } from "react-router-dom";
 
 import classes from "./NavBar.module.css";
 
-function NavBar() {
+function NavBar({ className, isOpen }) {
   return (
-    <nav className={classes.nav}>
+    <nav
+      className={`${className} ${classes.nav} ${
+        isOpen ? classes.navOpen : undefined
+      }`}
+    >
       <ul className={classes.list}>
         <li>
           <NavLink

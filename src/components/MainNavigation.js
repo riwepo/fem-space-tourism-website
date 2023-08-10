@@ -16,7 +16,7 @@ function MainNavigation() {
   return (
     <header className={classes.header}>
       <img className={classes.logo} src={logo} alt="space logo" />
-      <NavBar />
+      <NavBar className={classes.navBar} isOpen={isMenuOpen} />
       {!isMenuOpen && (
         <img
           className={classes.menu}

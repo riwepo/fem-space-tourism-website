@@ -1,4 +1,6 @@
 .header {
+  position: relative;
+
   width: 100%;
 
   display: flex;
@@ -12,6 +14,9 @@
   height: 3rem;
   width: 3rem;
   cursor: pointer;
+}
+
+.navBar {
 }
 
 .menu {
