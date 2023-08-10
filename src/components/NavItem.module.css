@@ -1,0 +1,12 @@
+.navLink {
+  color: white;
+  text-decoration: none;
+  font: var(--nav-regular-27-space-font);
+  text-transform: uppercase;
+  font-weight: var(--regular-fontweight);
+  letter-spacing: 0.27rem;
+}
+
+.navLink.navLinkActive {
+  text-decoration: underline;
+}
