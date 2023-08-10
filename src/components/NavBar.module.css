@@ -1,0 +1,8 @@
+.navLink {
+  /* color: red; */
+  text-decoration: none;
+}
+
+.navLink.navLinkActive {
+  text-decoration: underline;
+}

@@ -1,21 +1,59 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+
+import classes from "./NavBar.module.css";
 
 function NavBar() {
   return (
     <nav>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <NavLink
+            className={({ isActive }) => {
+              return isActive
+                ? `${classes.navLink} ${classes.navLinkActive}`
+                : classes.navLink;
+            }}
+            to="/"
+          >
+            Home
+          </NavLink>
         </li>
         <li>
-          <Link to="/destination">Destination</Link>
+          <NavLink
+            className={({ isActive }) => {
+              return isActive
+                ? `${classes.navLink} ${classes.navLinkActive}`
+                : classes.navLink;
+            }}
+            to="/destination"
+          >
+            Destination
+          </NavLink>
         </li>
         <li>
-          <Link to="/crew">Crew</Link>
+          <NavLink
+            className={({ isActive }) => {
+              return isActive
+                ? `${classes.navLink} ${classes.navLinkActive}`
+                : classes.navLink;
+            }}
+            to="/crew"
+          >
+            Crew
+          </NavLink>
         </li>
         <li>
-          <Link to="/technology">Technology</Link>
+          <NavLink
+            className={({ isActive }) => {
+              return isActive
+                ? `${classes.navLink} ${classes.navLinkActive}`
+                : classes.navLink;
+            }}
+            to="/technology"
+          >
+            Technology
+          </NavLink>
         </li>
       </ul>
     </nav>
