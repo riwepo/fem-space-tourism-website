@@ -11,9 +11,11 @@
 .logo {
   height: 3rem;
   width: 3rem;
+  cursor: pointer;
 }
 
 .menu {
   height: 2rem;
   width: 2rem;
+  cursor: pointer;
 }
