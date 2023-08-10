@@ -31,6 +31,13 @@
 body{
   font-size: 62.5%;
   background-color: var(--black-color);
+
+  border: solid 1px blue;
+}
+
+/* for debugging */
+div, header, nav {
+  border: solid 1px red;
 }
 
 
