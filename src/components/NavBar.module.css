@@ -1,5 +1,15 @@
+.nav {
+  width: 100%;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+
 .navLink {
-  /* color: red; */
   text-decoration: none;
 }
 

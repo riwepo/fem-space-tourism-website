@@ -5,8 +5,8 @@ import classes from "./NavBar.module.css";
 
 function NavBar() {
   return (
-    <nav>
-      <ul>
+    <nav className={classes.nav}>
+      <ul className={classes.list}>
         <li>
           <NavLink
             className={({ isActive }) => {
