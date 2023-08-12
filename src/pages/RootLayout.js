@@ -7,12 +7,12 @@ import classes from "./RootLayout.module.css";
 
 function RootLayout() {
   return (
-    <>
+    <div className={classes.container}>
       <MainNavigation />
       <main className={classes.main}>
         <Outlet />
       </main>
-    </>
+    </div>
   );
 }
 
