@@ -1,0 +1,40 @@
+.backgroundContainer {
+  width: 100%;
+  height: 66.7rem;
+  background: url(../assets/home/background-home-mobile.jpg) no-repeat center
+    center;
+  background-size: cover;
+}
+
+.foregroundContainer {
+  margin: 10rem 4rem 4rem 4rem;
+
+  flex-direction: column;
+  align-items: center;
+}
+
+.h2 {
+  font: var(--nav-regular-27-space-font);
+  letter-spacing: 0.27rem;
+  text-transform: uppercase;
+}
+
+.h1 {
+  font: var(--heading-1-regular-font);
+  font-size: 15rem;
+  text-transform: uppercase;
+}
+
+.p {
+  font: var(--body-text-font);
+}
+
+.button {
+  height: 16rem;
+  width: 16rem;
+
+  font: var(--heading-4-regular-font);
+  text-transform: uppercase;
+  border: none;
+  border-radius: 100%;
+}

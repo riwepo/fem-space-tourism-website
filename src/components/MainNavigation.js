@@ -14,7 +14,7 @@ function MainNavigation() {
     setIsMenuOpen((current) => !current);
   };
   return (
-    <header className={classes.header}>
+    <header className={`flex container ${classes.header}`}>
       <img className={classes.logo} src={logo} alt="space logo" />
       <NavBar className={classes.navBar} isOpen={isMenuOpen} />
       {!isMenuOpen && (

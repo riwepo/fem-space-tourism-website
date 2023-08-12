@@ -68,6 +68,30 @@ How to pre-set a set of design fonts with CSS variables, including weight, size 
 
 How to use isActive passed to the children property of NavLink to alter display of active link.
 
+Watched Scrimba course on CSS design system.
+Added more stuff to my general reset.
+Used utiility classes.
+Made color variables use rgb.
+Used variable name type prefix rather than suffix, helps with intellisense.
+
+Adjust alpha in colors while still using CSS variable.
+
+Letter spacing is in pixels because the values are very small and the decimal points are very specific??
+
+Using default values for custom properties.
+
+Using undefined custom properties with default values.
+
+Use aspect left/right padding and aspect ratio for styling buttons.
+
+Place-items shorthand in grid.
+
+Kevin Powel writes his HTML desktop first because it is more complex, then when he styles he does it mobile first.
+
+If putting img in a flex container, wrap it in a div to avoid some bugs in the Chrome browser.
+
+Using a clamp on large fonts, based on vw or viewport unit, means that the font continaully changes size as we re-size the screen, doesn't just break at the media query point.
+
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
 To see how you can add code snippets, see below:

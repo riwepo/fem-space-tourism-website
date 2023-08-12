@@ -4,7 +4,6 @@
 }
 
 .id {
-  color: var(--white-color);
   font: var(--nav-semi-bold-27-space-font);
   letter-spacing: 0.27rem;
 }
@@ -12,7 +11,6 @@
 .label {
   text-transform: uppercase;
 
-  color: var(--white-color);
   font: var(--nav-regular-27-space-font);
   letter-spacing: 0.27rem;
 
@@ -24,11 +22,10 @@
   height: 2rem;
   width: 0.1rem;
   width: 1rem;
-  background-color: var(--black-color);
 
   margin-left: auto;
 }
 
 .indicator.indicatorActive {
-  background-color: var(--white-color);
+  background-color: var(--clr-white);
 }

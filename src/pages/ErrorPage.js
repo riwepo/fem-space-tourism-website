@@ -3,7 +3,6 @@ import React from "react";
 import MainNavigation from "../components/MainNavigation";
 
 function ErrorPage() {
-  console.log("error page");
   return (
     <>
       <MainNavigation />

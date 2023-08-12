@@ -19,16 +19,20 @@ function NavBar({ className, isOpen }) {
         isOpen ? classes.navOpen : undefined
       }`}
     >
-      <ul className={classes.list}>
+      <ul
+        className={`flex container primary-navigation underline-indicators ${classes.list}`}
+      >
         {navSpec.map((item) => {
           return (
-            <NavLink
-              key={item.id}
-              to={item.path}
-              children={({ isActive }) => {
-                return <NavItem item={item} isActive={isActive} />;
-              }}
-            />
+            <li>
+              <NavLink
+                key={item.id}
+                to={item.path}
+                children={({ isActive }) => {
+                  return <NavItem item={item} isActive={isActive} />;
+                }}
+              />
+            </li>
           );
         })}
       </ul>
