@@ -19,7 +19,7 @@ function MainNavigation() {
       <NavBar className={classes.navBar} isOpen={isMenuOpen} />
       {!isMenuOpen && (
         <img
-          className={classes.menu}
+          className={`${classes.menu} ${classes.menuOpen}`}
           src={iconHamburger}
           alt="hamgurger menu"
           onClick={menuClickHandler}
@@ -27,7 +27,7 @@ function MainNavigation() {
       )}
       {isMenuOpen && (
         <img
-          className={classes.menu}
+          className={`${classes.menu} ${classes.menuClose}`}
           src={iconClose}
           alt="close menu"
           onClick={menuClickHandler}
