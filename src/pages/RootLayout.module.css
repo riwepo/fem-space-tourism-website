@@ -10,3 +10,17 @@
   grid-template-rows: min-content 1fr;
   /* border: solid 1px blue; */
 }
+
+@media (min-width: 35rem) {
+  .container {
+    background: url(../assets/home/background-home-tablet.jpg) no-repeat center
+      center;
+  }
+}
+
+@media (min-width: 45rem) {
+  .container {
+    background: url(../assets/home/background-home-desktop.jpg) no-repeat center
+      center;
+  }
+}
