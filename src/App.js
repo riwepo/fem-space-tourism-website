@@ -8,6 +8,8 @@ import TechnologyPage from "./pages/TechnologyPage";
 import RootLayout from "./pages/RootLayout";
 import ErrorPage from "./pages/ErrorPage";
 
+import npmConfig from "../package.json";
+
 const router = createBrowserRouter(
   [
     {
@@ -22,7 +24,7 @@ const router = createBrowserRouter(
       ],
     },
   ],
-  { basename: "/fem-space-tourism-website" }
+  { basename: `/${npmConfig.name}` }
 );
 
 function App() {
