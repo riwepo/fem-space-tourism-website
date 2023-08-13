@@ -1,8 +1,8 @@
-.numberedTitle {
+.navItem {
   white-space: nowrap;
 }
-.numberedTitle span {
+.navItem span {
   margin-right: 0.5em;
   font-weight: 700;
-  color: rgba(var(--clr-white), 0.25);
+  /* color: rgba(var(--clr-white), 0.25); */
 }

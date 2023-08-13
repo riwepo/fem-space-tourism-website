@@ -7,7 +7,7 @@ function NavItem({ item, isActive }) {
   return (
     <p
       className={`uppercase text-light fs-300 ff-sans-cond letter-spacing-2 ${
-        classes.numberedTitle
+        classes.navItem
       } ${underlinerClasses.indicator} ${
         isActive ? underlinerClasses.indicatorActive : undefined
       }`}
