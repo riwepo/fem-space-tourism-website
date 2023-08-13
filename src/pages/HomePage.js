@@ -23,12 +23,12 @@ function HomePage() {
           </p>
         </div>
         <div>
-          <a
+          {/* <a
             href="#dummy"
             className="large-button upper-case ff-serif text-dark bg-light fs-600"
           >
             Explore
-          </a>
+          </a> */}
         </div>
       </div>
     </div>
