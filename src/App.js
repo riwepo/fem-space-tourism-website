@@ -1,11 +1,15 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import HomePage from "./pages/HomePage";
-import CrewPage from "./pages/CrewPage";
-import DestinationPage from "./pages/DestinationPage";
-import TechnologyPage from "./pages/TechnologyPage";
 import RootLayout from "./pages/RootLayout";
+import HomePage from "./pages/HomePage";
+import DestinationLayout from "./pages/DestinationLayout";
+import CrewPage from "./pages/CrewPage";
+import TechnologyPage from "./pages/TechnologyPage";
+import MoonPage from "./pages/destinations/MoonPage";
+import MarsPage from "./pages/destinations/MarsPage";
+import EuropaPage from "./pages/destinations/EuropaPage";
+import TitanPage from "./pages/destinations/TitanPage";
 import ErrorPage from "./pages/ErrorPage";
 
 import npmConfig from "../package.json";
@@ -18,8 +22,17 @@ const router = createBrowserRouter(
       errorElement: <ErrorPage />,
       children: [
         { path: "/", element: <HomePage /> },
+        {
+          path: "/destination",
+          element: <DestinationLayout />,
+          children: [
+            { path: "moon", element: <MoonPage /> },
+            { path: "mars", element: <MarsPage /> },
+            { path: "europa", element: <EuropaPage /> },
+            { path: "titan", element: <TitanPage /> },
+          ],
+        },
         { path: "/crew", element: <CrewPage /> },
-        { path: "/destination", element: <DestinationPage /> },
         { path: "/technology", element: <TechnologyPage /> },
       ],
     },
