@@ -145,7 +145,6 @@ select {
 }
 
 .grid-container {
-  border: 5px solid limegreen;
   display: grid;
 }
 
@@ -160,12 +159,10 @@ select {
 
   .grid-container > *:first-child {
     grid-column: 2;
-    outline: 1px solid red;
   }
 
   .grid-container > *:last-child {
     grid-column: 3;
-    outline: 1px solid yellow;
   }
 }
 
@@ -314,28 +311,19 @@ html {
 }
 
 body {
-  /* desktop, tablet */
-  /* font-size: 62.5%; */
-  /* mobile */
-  /* font-size: 33.3%; */
-  /* font-size: 5%; */
-  /* background-color: var(--clr-black); */
-
   font-family: var(--ff-sans-normal);
   font-size: var(--fs-400);
   background-color: rgb(var(--clr-black));
   color: rgb(var(--clr-white));
   line-height: 1.5;
   min-height: 100vh;
-
-  outline: solid 1px blue;
 }
 
 /* for debugging */
 div,
 header,
 nav {
-  outline: solid 1px red;
+  border: solid 1px red;
 }
 
 h1,
