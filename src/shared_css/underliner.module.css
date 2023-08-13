@@ -1,6 +1,7 @@
 .indicator {
-  padding: var(--underline-gap, 1rem) 0;
-  border-bottom: 0.2rem solid rgba(var(--clr-white), 0);
+  padding: var(--underline-gap, 1rem);
+  border-bottom: none;
+  border-right: 0.2rem solid rgba(var(--clr-white), 0);
 }
 
 .indicator:hover,
@@ -10,4 +11,12 @@
 
 .indicator.indicatorActive {
   border-color: rgba(var(--clr-white), 1);
+}
+
+@media (min-width: 35rem) {
+  .indicator {
+    padding: var(--underline-gap, 1rem) 0;
+    border-right: none;
+    border-bottom: 0.2rem solid rgba(var(--clr-white), 0);
+  }
 }
