@@ -7,7 +7,7 @@ import centeredGrid from "../shared_css/centered-grid.module.css";
 
 function HomePage() {
   return (
-    <div className={centeredGrid.centeredGrid}>
+    <div className={centeredGrid.grid}>
       <div>
         <h1
           className={`ff-sans-cond fs-500 upper-case letter-spacing-1 text-accent ${classes.h1}`}

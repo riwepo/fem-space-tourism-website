@@ -1,7 +1,11 @@
 import React from "react";
 
-function DestinationNavigation() {
-  return <h1>destination navigation</h1>;
+function DestinationNavigation({ className }) {
+  return (
+    <nav className={className}>
+      <h1>destination navigation</h1>
+    </nav>
+  );
 }
 
 export default DestinationNavigation;
