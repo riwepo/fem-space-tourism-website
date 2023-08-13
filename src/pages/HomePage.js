@@ -1,35 +1,31 @@
 import React from "react";
 
+import LargeButton from "../components/LargeButton";
+
 import classes from "./HomePage.module.css";
+import centeredGrid from "../shared_css/centered-grid.module.css";
 
 function HomePage() {
   return (
-    <div className={`${classes.backgroundContainer}`}>
-      <div className={`grid-container`}>
-        <div>
-          <h1
-            className={`ff-sans-cond fs-500 upper-case letter-spacing-1 text-accent`}
-          >
-            So you want to travel to
-            <span className="ff-serif fs-900 upper-case text-light d-block">
-              Space
-            </span>
-          </h1>
-          <p>
-            Let’s face it; if you want to go to space, you might as well
-            genuinely go to outer space and not hover kind of on the edge of it.
-            Well sit back, and relax because we’ll give you a truly out of this
-            world experience!
-          </p>
-        </div>
-        <div>
-          {/* <a
-            href="#dummy"
-            className="large-button upper-case ff-serif text-dark bg-light fs-600"
-          >
-            Explore
-          </a> */}
-        </div>
+    <div className={centeredGrid.centeredGrid}>
+      <div>
+        <h1
+          className={`ff-sans-cond fs-500 upper-case letter-spacing-1 text-accent ${classes.h1}`}
+        >
+          So you want to travel to
+          <span className="ff-serif fs-900 upper-case text-light d-block">
+            Space
+          </span>
+        </h1>
+        <p className={`text-accent ${classes.p}`}>
+          Let’s face it; if you want to go to space, you might as well genuinely
+          go to outer space and not hover kind of on the edge of it. Well sit
+          back, and relax because we’ll give you a truly out of this world
+          experience!
+        </p>
+      </div>
+      <div>
+        <LargeButton className={classes.button} />
       </div>
     </div>
   );

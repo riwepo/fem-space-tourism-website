@@ -1,32 +1,13 @@
-.container {
-  margin: 10rem 4rem 4rem 4rem;
-
-  flex-direction: column;
-  align-items: center;
-}
-
-.h2 {
-  font: var(--nav-regular-27-space-font);
-  letter-spacing: 0.27rem;
-  text-transform: uppercase;
-}
-
 .h1 {
-  font: var(--heading-1-regular-font);
-  font-size: 15rem;
-  text-transform: uppercase;
-}
-
-.p {
-  font: var(--body-text-font);
+  padding-top: 4rem;
 }
 
 .button {
-  height: 16rem;
-  width: 16rem;
+  padding-top: 4rem;
+  padding-left: 5rem;
+  padding-bottom: 4rem;
+}
 
-  font: var(--heading-4-regular-font);
-  text-transform: uppercase;
-  border: none;
-  border-radius: 100%;
+.p {
+  padding-bottom: 4rem;
 }
