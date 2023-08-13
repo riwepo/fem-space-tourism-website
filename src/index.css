@@ -122,48 +122,8 @@ select {
 /* start           */
 /*******************/
 
-.flex {
-  display: flex;
-  gap: var(--gap, 1rem);
-}
-
-.grid {
-  display: grid;
-  gap: var(--gap, 1rem);
-}
-
 .d-block {
   display: block;
-}
-
-.container {
-  padding-inline: 2em;
-  margin-inline: auto;
-
-  /* taken out for now but want it back */
-  /* max-width: 80rem; */
-}
-
-.grid-container {
-  display: grid;
-}
-
-@media (min-width: 45em) {
-  .grid-container {
-    column-gap: var(--container-gap, 2rem);
-    grid-template-columns:
-      minmax(2rem, 1fr)
-      repeat(2, minmax(0, 30rem))
-      minmax(2rem, 1fr);
-  }
-
-  .grid-container > *:first-child {
-    grid-column: 2;
-  }
-
-  .grid-container > *:last-child {
-    grid-column: 3;
-  }
 }
 
 /* add a bottom margin to all children except last */
