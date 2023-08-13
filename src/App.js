@@ -8,19 +8,22 @@ import TechnologyPage from "./pages/TechnologyPage";
 import RootLayout from "./pages/RootLayout";
 import ErrorPage from "./pages/ErrorPage";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <RootLayout />,
-    errorElement: <ErrorPage />,
-    children: [
-      { path: "/", element: <HomePage /> },
-      { path: "/crew", element: <CrewPage /> },
-      { path: "/destination", element: <DestinationPage /> },
-      { path: "/technology", element: <TechnologyPage /> },
-    ],
-  },
-]);
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <RootLayout />,
+      errorElement: <ErrorPage />,
+      children: [
+        { path: "/", element: <HomePage /> },
+        { path: "/crew", element: <CrewPage /> },
+        { path: "/destination", element: <DestinationPage /> },
+        { path: "/technology", element: <TechnologyPage /> },
+      ],
+    },
+  ],
+  { basename: "/fem-space-tourism-website" }
+);
 
 function App() {
   return <RouterProvider router={router} />;
