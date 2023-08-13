@@ -1,0 +1,22 @@
+/* this is a grid centered between two collapsible outer columns */
+.centeredGrid {
+  display: grid;
+}
+
+@media (min-width: 45em) {
+  .centeredGrid {
+    column-gap: var(--container-gap, 2rem);
+    grid-template-columns:
+      minmax(2rem, 1fr)
+      repeat(2, minmax(0, 30rem))
+      minmax(2rem, 1fr);
+  }
+
+  .centeredGrid > *:first-child {
+    grid-column: 2;
+  }
+
+  .centeredGrid > *:last-child {
+    grid-column: 3;
+  }
+}
