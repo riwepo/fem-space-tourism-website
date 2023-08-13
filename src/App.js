@@ -26,6 +26,7 @@ const router = createBrowserRouter(
           path: "/destination",
           element: <DestinationLayout />,
           children: [
+            { path: "", element: <MoonPage /> },
             { path: "moon", element: <MoonPage /> },
             { path: "mars", element: <MarsPage /> },
             { path: "europa", element: <EuropaPage /> },
