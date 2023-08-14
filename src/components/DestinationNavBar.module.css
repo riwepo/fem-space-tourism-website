@@ -8,6 +8,7 @@
     auto
     minmax(0, 6rem);
 }
+
 .nav ul {
   grid-column: 2;
 
@@ -18,6 +19,11 @@
 
   /* the outer 2 columns are just for spacing as we resize */
   grid-template-columns: repeat(4, auto);
+}
+
+.navLink {
+  --underline-gap: 2rem;
+  text-decoration: none;
 }
 
 @media (min-width: 35rem) {
