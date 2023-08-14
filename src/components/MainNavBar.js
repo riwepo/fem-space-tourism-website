@@ -11,6 +11,7 @@ function MainNavBar({ className, navSpec, isOpen }) {
       className={className}
       classes={classes}
       navSpec={navSpec}
+      showIds={true}
       isOpen={isOpen}
     />
   );

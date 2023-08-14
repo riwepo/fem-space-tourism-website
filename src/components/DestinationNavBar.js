@@ -11,6 +11,7 @@ function DestinationNavBar({ className, navSpec, isOpen }) {
       className={className}
       classes={classes}
       navSpec={navSpec}
+      showIds={false}
       isOpen={isOpen}
     />
   );

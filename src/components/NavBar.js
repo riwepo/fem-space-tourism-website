@@ -5,7 +5,7 @@ import NavItem from "./NavItem";
 
 // note that CSS classes are imported by wrapper classes
 
-function NavBar({ className, classes, navSpec, isOpen }) {
+function NavBar({ className, classes, navSpec, showIds, isOpen }) {
   return (
     <nav
       className={`${className} ${classes.nav} ${
@@ -20,7 +20,9 @@ function NavBar({ className, classes, navSpec, isOpen }) {
                 className={classes.navLink}
                 to={item.path}
                 children={({ isActive }) => {
-                  return <NavItem item={item} isActive={isActive} />;
+                  return (
+                    <NavItem item={item} showId={showIds} isActive={isActive} />
+                  );
                 }}
               />
             </li>
