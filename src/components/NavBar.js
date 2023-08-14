@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 import NavItem from "./NavItem";
 
-// import classes from "./NavBar.module.css";
+// note that CSS classes are imported by wrapper classes
 
 function NavBar({ className, classes, navSpec, isOpen }) {
   return (

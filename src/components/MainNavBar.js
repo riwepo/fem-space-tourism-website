@@ -4,6 +4,7 @@ import NavBar from "./NavBar";
 
 import classes from "./MainNavBar.module.css";
 
+// this is a wrapper around NavBar with CSS classes for main navigation
 function MainNavBar({ className, navSpec, isOpen }) {
   return (
     <NavBar
