@@ -5,14 +5,14 @@ import NavItem from "./NavItem";
 
 import classes from "./NavBar.module.css";
 
-const navSpec = [
-  { id: "00", label: "HOME", path: "/" },
-  { id: "01", label: "DESTINATION", path: "/destination" },
-  { id: "02", label: "CREW", path: "/crew" },
-  { id: "03", label: "TECHNOLOGY", path: "/technology" },
-];
+// const navSpec = [
+//   { id: "00", label: "HOME", path: "/" },
+//   { id: "01", label: "DESTINATION", path: "/destination" },
+//   { id: "02", label: "CREW", path: "/crew" },
+//   { id: "03", label: "TECHNOLOGY", path: "/technology" },
+// ];
 
-function NavBar({ className, isOpen }) {
+function NavBar({ className, navSpec, isOpen }) {
   return (
     <nav
       className={`${className} ${classes.nav} ${

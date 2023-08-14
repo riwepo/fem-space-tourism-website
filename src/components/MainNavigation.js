@@ -8,6 +8,13 @@ import iconClose from "../assets/shared/icon-close.svg";
 
 import classes from "./MainNavigation.module.css";
 
+const mainNavSpec = [
+  { id: "00", label: "HOME", path: "/" },
+  { id: "01", label: "DESTINATION", path: "/destination" },
+  { id: "02", label: "CREW", path: "/crew" },
+  { id: "03", label: "TECHNOLOGY", path: "/technology" },
+];
+
 function MainNavigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuClickHandler = (event) => {
@@ -16,7 +23,11 @@ function MainNavigation() {
   return (
     <header className={classes.header}>
       <img className={classes.logo} src={logo} alt="space logo" />
-      <NavBar className={classes.navBar} isOpen={isMenuOpen} />
+      <NavBar
+        className={classes.navBar}
+        navSpec={mainNavSpec}
+        isOpen={isMenuOpen}
+      />
       {!isMenuOpen && (
         <img
           className={`${classes.menu} ${classes.menuOpen}`}
