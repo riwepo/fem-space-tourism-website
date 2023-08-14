@@ -12,7 +12,7 @@ function NavBar({ className, classes, navSpec, showIds, isOpen }) {
         isOpen ? classes.navOpen : undefined
       }`}
     >
-      <ul className={classes.navList}>
+      <ul>
         {navSpec.map((item) => {
           return (
             <li key={item.id}>
