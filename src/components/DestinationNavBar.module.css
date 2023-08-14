@@ -22,7 +22,7 @@
 }
 
 .navLink {
-  --underline-gap: 2rem;
+  --underline-gap: 0.5rem;
   text-decoration: none;
 }
 
