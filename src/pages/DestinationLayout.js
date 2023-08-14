@@ -1,7 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 
-import DestinationNavigation from "../components/destination/DestinationNavigation";
+import DestinationNavigation from "../components/DestinationNavigation";
 
 import classes from "./DestinationLayout.module.css";
 import centeredGrid from "../shared_css/centered-grid.module.css";

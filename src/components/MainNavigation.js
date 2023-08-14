@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import NavBar from "./NavBar";
+import MainNavBar from "./MainNavBar";
 
 import logo from "../assets/shared/logo.svg";
 import iconHamburger from "../assets/shared/icon-hamburger.svg";
@@ -23,7 +23,7 @@ function MainNavigation() {
   return (
     <header className={classes.header}>
       <img className={classes.logo} src={logo} alt="space logo" />
-      <NavBar
+      <MainNavBar
         className={classes.navBar}
         navSpec={mainNavSpec}
         isOpen={isMenuOpen}

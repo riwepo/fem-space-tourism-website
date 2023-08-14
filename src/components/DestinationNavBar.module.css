@@ -1,0 +1,51 @@
+.nav {
+  /* we use this element as a spacer
+  and put the content in the middle column */
+  display: grid;
+  gap: 0;
+  grid-template-columns:
+    minmax(0, 6rem)
+    auto
+    minmax(0, 6rem);
+}
+.nav ul {
+  grid-column: 2;
+
+  list-style: none;
+  display: grid;
+  justify-content: space-between;
+  gap: 1.5rem;
+
+  /* the outer 2 columns are just for spacing as we resize */
+  grid-template-columns: repeat(4, auto);
+}
+
+@media (min-width: 35rem) {
+  /* we use this element as a spacer
+  and put the content in the middle column */
+  .nav {
+    display: grid;
+    gap: 0;
+    grid-template-columns:
+      minmax(0, 6rem)
+      auto
+      minmax(0, 6rem);
+  }
+  .nav ul {
+    grid-column: 2;
+
+    list-style: none;
+    display: grid;
+    justify-content: space-between;
+    gap: 1.5rem;
+
+    /* the outer 2 columns are just for spacing as we resize */
+    grid-template-columns: repeat(4, auto);
+  }
+}
+
+@media (min-width: 45rem) {
+  .nav ul {
+    gap: 4rem;
+  }
+}
