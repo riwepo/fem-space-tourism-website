@@ -1,5 +1,9 @@
 import React from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Navigate,
+} from "react-router-dom";
 
 import RootLayout from "./pages/RootLayout";
 import HomePage from "./pages/HomePage";
@@ -25,8 +29,9 @@ const router = createBrowserRouter(
         {
           path: "/destination",
           element: <DestinationLayout />,
+          errorElement: <ErrorPage />,
           children: [
-            { path: "", element: <MoonPage /> },
+            { path: "", element: <Navigate to="moon" replace /> },
             { path: "moon", element: <MoonPage /> },
             { path: "mars", element: <MarsPage /> },
             { path: "europa", element: <EuropaPage /> },
