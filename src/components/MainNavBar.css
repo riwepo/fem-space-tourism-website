@@ -1,9 +1,9 @@
-.nav {
+.main-navbar {
   display: none;
   backdrop-filter: blur(5px);
 }
 
-.nav.navOpen {
+.main-navbar.main-navbar--open {
   display: block;
   position: absolute;
   top: 0%;
@@ -11,7 +11,7 @@
   z-index: 1;
 }
 
-.nav.navOpen ul {
+.main-navbar.main-navbar--open > ul {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -21,7 +21,7 @@
   padding: 8rem 0 0 0;
 }
 
-.navLink {
+.main-navbar .nav-link {
   --underline-gap: 2rem;
   text-decoration: none;
 }
@@ -29,7 +29,7 @@
 @media (min-width: 35rem) {
   /* we use this element as a spacer
   and put the content in the middle column */
-  .nav {
+  .main-navbar {
     display: grid;
     gap: 0;
     grid-template-columns:
@@ -37,7 +37,7 @@
       auto
       minmax(0, 6rem);
   }
-  .nav ul {
+  .main-navbar > ul {
     grid-column: 2;
 
     list-style: none;
@@ -51,7 +51,7 @@
 }
 
 @media (min-width: 45rem) {
-  .nav ul {
+  .main-navbar ul {
     gap: 4rem;
   }
 }

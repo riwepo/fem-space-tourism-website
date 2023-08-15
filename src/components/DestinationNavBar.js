@@ -1,19 +1,31 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
-import NavBar from "./NavBar";
+import NavItem from "./NavItem";
 
-import classes from "./DestinationNavBar.module.css";
+import "./DestinationNavBar.css";
 
-// this is a wrapper around NavBar with CSS classes for destination navigation
-function DestinationNavBar({ className, navSpec, isOpen }) {
+function DestinationNavBar({ navSpec }) {
   return (
-    <NavBar
-      className={className}
-      classes={classes}
-      navSpec={navSpec}
-      showIds={false}
-      isOpen={isOpen}
-    />
+    <nav className="destination-navbar">
+      <ul>
+        {navSpec.map((item) => {
+          return (
+            <li key={item.id}>
+              <NavLink
+                className="nav-link"
+                to={item.path}
+                children={({ isActive }) => {
+                  return (
+                    <NavItem item={item} showId={false} isActive={isActive} />
+                  );
+                }}
+              />
+            </li>
+          );
+        })}
+      </ul>
+    </nav>
   );
 }
 

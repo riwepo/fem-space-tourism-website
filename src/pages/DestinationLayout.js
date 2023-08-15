@@ -3,15 +3,17 @@ import { Outlet } from "react-router-dom";
 
 import DestinationNavigation from "../components/DestinationNavigation";
 
-import classes from "./DestinationLayout.module.css";
-import centeredGrid from "../shared_css/centered-grid.module.css";
+import "./DestinationLayout.css";
+import "../shared_css/centered-grid.css";
 
 function DestinationLayout() {
   return (
-    <div className={`${centeredGrid.grid} ${classes.container}`}>
-      <header className={classes.header}>01 Pick your destination</header>
-      <DestinationNavigation className={classes.nav} />
-      <section className={classes.outlet}>
+    <div className="destination-layout centered-grid">
+      <h1 className="ff-sans-con fs-500 upper-case letter-spacing-1">
+        <span>01</span> Pick your destination
+      </h1>
+      <DestinationNavigation className="navigation" />
+      <section className="section">
         <Outlet />
       </section>
     </div>

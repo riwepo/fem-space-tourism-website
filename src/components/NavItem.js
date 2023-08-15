@@ -1,14 +1,11 @@
 import React from "react";
 
-import classes from "./NavItem.module.css";
-import underlinerClasses from "../shared_css/underliner.module.css";
+import "./NavItem.css";
+import "../shared_css/underliner.css";
 
 function NavItem({ item, showId, isActive }) {
-  const className = `uppercase text-light fs-300 ff-sans-cond letter-spacing-2 ${
-    classes.navItem
-  } ${underlinerClasses.indicator} ${
-    isActive ? underlinerClasses.indicatorActive : undefined
-  }`;
+  const className = `uppercase text-light fs-300 ff-sans-cond letter-spacing-2 nav-item indicator
+   ${isActive ? "indicator--active" : undefined}`;
   if (showId)
     return (
       <p className={className}>

@@ -1,0 +1,22 @@
+.destination-layout > h1 {
+  grid-column: 2;
+  grid-row: 1;
+  white-space: nowrap;
+}
+
+.destination-layout > h1 span {
+  margin-right: 0.5em;
+  font-weight: 700;
+  color: rgba(var(--clr-white), 0.25);
+}
+
+.destination-layout > .navigation {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.destination-layout > .section {
+  grid-column-start: 2 !important;
+  grid-column-end: 4 !important;
+  grid-row: 3;
+}

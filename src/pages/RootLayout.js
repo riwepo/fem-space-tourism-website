@@ -3,13 +3,14 @@ import { Outlet } from "react-router-dom";
 
 import MainNavigation from "../components/MainNavigation";
 
-import classes from "./RootLayout.module.css";
+// import classes from "./RootLayout.module.css";
+import "./RootLayout.css";
 
 function RootLayout() {
   return (
-    <div className={classes.container}>
+    <div className="root-layout">
       <MainNavigation />
-      <main className={classes.main}>
+      <main>
         <Outlet />
       </main>
     </div>

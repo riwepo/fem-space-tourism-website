@@ -18,7 +18,7 @@
   --fs-800: 3.5rem;
   --fs-700: 1.5rem;
   --fs-600: 1rem;
-  --fs-500: 1.75rem;
+  --fs-500: 1rem;
   --fs-400: 0.9375rem;
   --fs-300: 1rem;
   --fs-200: 0.875rem;
@@ -27,17 +27,6 @@
   --ff-serif: "Bellefair", serif;
   --ff-sans-cond: "Barlow Condensed", sans-serif;
   --ff-sans-normal: "Barlow", sans-serif;
-
-  --heading-1-regular-font: 400 15rem "Bellefair", serif;
-  --heading-2-regular-font: 400 10rem "Bellefair", serif;
-  --heading-3-regular-font: 400 5.6rem "Bellefair", serif;
-  --heading-4-regular-font: 400 3.2rem "Bellefair", serif;
-  --heading-5-regular-475-space-font: 400 2.8rem "Barlow Condensed", serif;
-  --sub-heading-1-regular-font: 400 2.8rem "Bellefair", serif;
-  --sub-heading-2-regular-235-space-font: 400 1.4rem "Barlow Condensed", serif;
-  --nav-regular-27-space-font: 400 1.6rem "Barlow Condensed", serif;
-  --nav-semi-bold-27-space-font: 600 1.6rem "Barlow Condensed", serif;
-  --body-text-font: 400 1.8rem "Barlow", serif;
 }
 
 @media (min-width: 35rem) {
@@ -46,6 +35,7 @@
     --fs-800: 5rem;
     --fs-700: 2.5rem;
     --fs-600: 1.5rem;
+    --fs-500: 1.25rem;
     --fs-400: 1rem;
   }
 }
@@ -56,6 +46,7 @@
     --fs-800: 6.25rem;
     --fs-700: 3.5rem;
     --fs-600: 2rem;
+    --fs-500: 1.75rem;
     --fs-400: 1.125rem;
   }
 }
@@ -221,55 +212,6 @@ select {
 /* end             */
 /*******************/
 
-/*******************/
-/* components      */
-/* start           */
-/*******************/
-
-.large-button {
-  position: relative;
-  z-index: 1;
-  display: grid;
-  padding: 0 2em;
-  aspect-ratio: 1;
-  place-items: center;
-  text-decoration: none;
-  border-radius: 50%;
-}
-.large-button::after {
-  position: absolute;
-  z-index: -1;
-  content: "";
-  background: rgba(var(--clr-white), 0.15);
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  opacity: 0;
-  transition: opacity 500ms linear, transform 500ms ease-in-out;
-}
-.large-button:hover::after,
-.large-button:focus::after {
-  opacity: 1;
-  transform: scale(1.5);
-}
-
-/*******************/
-/* components      */
-/* end             */
-/*******************/
-
-/* design system H1 = 150
-desktop H1 = 150
-tablet H1 = 150
-mobile H1 = 80 */
-html {
-  /* default font size is 16px on all systems */
-  /*  for desktop, tablet we chose 62.5% so that 1rem=10px */
-  /* font-size: 62.5%; */
-  /*  for mobile we chose 62.3 x 80 / 150 = 33.3% = 5.3px */
-  /* font-size: 33.3%; */
-}
-
 body {
   font-family: var(--ff-sans-normal);
   font-size: var(--fs-400);
@@ -277,13 +219,6 @@ body {
   color: rgb(var(--clr-white));
   line-height: 1.5;
   min-height: 100vh;
-}
-
-/* for debugging */
-div,
-header,
-nav {
-  border: solid 1px red;
 }
 
 h1,
@@ -295,3 +230,33 @@ h6,
 p {
   font-weight: 400;
 }
+
+/*********************/
+/* debugging borders */
+/* start             */
+/*********************/
+div,
+header,
+nav {
+  border: solid 1px red;
+}
+
+@media (min-width: 35rem) {
+  div,
+  header,
+  nav {
+    border: solid 1px green;
+  }
+}
+
+@media (min-width: 45rem) {
+  div,
+  header,
+  nav {
+    border: solid 1px blue;
+  }
+}
+/*********************/
+/* debugging borders */
+/* end               */
+/*********************/

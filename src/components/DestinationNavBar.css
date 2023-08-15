@@ -1,4 +1,4 @@
-.nav {
+.destination-navbar {
   /* we use this element as a spacer
   and put the content in the middle column */
   display: grid;
@@ -9,7 +9,7 @@
     minmax(0, 6rem);
 }
 
-.nav ul {
+.destination-navbar ul {
   grid-column: 2;
 
   list-style: none;
@@ -21,7 +21,7 @@
   grid-template-columns: repeat(4, auto);
 }
 
-.navLink {
+.destination-navbar .nav-link {
   --underline-gap: 0.5rem;
   text-decoration: none;
 }
@@ -29,7 +29,7 @@
 @media (min-width: 35rem) {
   /* we use this element as a spacer
   and put the content in the middle column */
-  .nav {
+  .destination-navbar {
     display: grid;
     gap: 0;
     grid-template-columns:
@@ -37,7 +37,7 @@
       auto
       minmax(0, 6rem);
   }
-  .nav ul {
+  .destination-navbar ul {
     grid-column: 2;
 
     list-style: none;
@@ -51,7 +51,7 @@
 }
 
 @media (min-width: 45rem) {
-  .nav ul {
+  .destination-navbar ul {
     gap: 4rem;
   }
 }

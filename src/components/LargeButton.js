@@ -1,13 +1,13 @@
 import React from "react";
 
-import classes from "./LargeButton.module.css";
+import "./LargeButton.css";
 
 function LargeButton({ className }) {
   return (
-    <div className={`${className} ${classes.container}`}>
+    <div className={`large-button ${className}`}>
       <a
         href="#dummy"
-        className={`upper-case ff-serif text-dark bg-light fs-600 ${classes.a}`}
+        className="upper-case ff-serif text-dark bg-light fs-600"
       >
         Explore
       </a>

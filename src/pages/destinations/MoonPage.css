@@ -1,8 +1,9 @@
-.container {
+.moon-page {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.heading {
+
+.moon-page h1 {
   text-align: center;
 }

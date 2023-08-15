@@ -2,22 +2,20 @@ import React from "react";
 
 import LargeButton from "../components/LargeButton";
 
-import classes from "./HomePage.module.css";
-import centeredGrid from "../shared_css/centered-grid.module.css";
+import "./HomePage.css";
+import "../shared_css/centered-grid.css";
 
 function HomePage() {
   return (
-    <div className={centeredGrid.grid}>
+    <div className={"home-page centered-grid"}>
       <div>
-        <h1
-          className={`ff-sans-cond fs-500 upper-case letter-spacing-1 text-accent ${classes.h1}`}
-        >
+        <h1 className="ff-sans-cond fs-500 upper-case letter-spacing-1 text-accent">
           So you want to travel to
           <span className="ff-serif fs-900 upper-case text-light d-block">
             Space
           </span>
         </h1>
-        <p className={`text-accent ${classes.p}`}>
+        <p className="text-accent">
           Let’s face it; if you want to go to space, you might as well genuinely
           go to outer space and not hover kind of on the edge of it. Well sit
           back, and relax because we’ll give you a truly out of this world
@@ -25,7 +23,7 @@ function HomePage() {
         </p>
       </div>
       <div>
-        <LargeButton className={classes.button} />
+        <LargeButton className="button" />
       </div>
     </div>
   );

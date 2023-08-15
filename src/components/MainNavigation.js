@@ -6,7 +6,7 @@ import logo from "../assets/shared/logo.svg";
 import iconHamburger from "../assets/shared/icon-hamburger.svg";
 import iconClose from "../assets/shared/icon-close.svg";
 
-import classes from "./MainNavigation.module.css";
+import "./MainNavigation.css";
 
 const mainNavSpec = [
   { id: "00", label: "HOME", path: "/" },
@@ -21,16 +21,16 @@ function MainNavigation() {
     setIsMenuOpen((current) => !current);
   };
   return (
-    <header className={classes.header}>
-      <img className={classes.logo} src={logo} alt="space logo" />
+    <header className="main-navigation">
+      <img className="logo" src={logo} alt="space logo" />
       <MainNavBar
-        className={classes.navBar}
+        // className={classes.navBar}
         navSpec={mainNavSpec}
         isOpen={isMenuOpen}
       />
       {!isMenuOpen && (
         <img
-          className={`${classes.menu} ${classes.menuOpen}`}
+          className="menu"
           src={iconHamburger}
           alt="hamgurger menu"
           onClick={menuClickHandler}
@@ -38,7 +38,7 @@ function MainNavigation() {
       )}
       {isMenuOpen && (
         <img
-          className={`${classes.menu} ${classes.menuClose}`}
+          className="menu"
           src={iconClose}
           alt="close menu"
           onClick={menuClickHandler}

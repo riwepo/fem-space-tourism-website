@@ -1,19 +1,31 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
-import NavBar from "./NavBar";
+import NavItem from "./NavItem";
 
-import classes from "./MainNavBar.module.css";
+import "./MainNavBar.css";
 
-// this is a wrapper around NavBar with CSS classes for main navigation
-function MainNavBar({ className, navSpec, isOpen }) {
+function MainNavBar({ navSpec, isOpen }) {
   return (
-    <NavBar
-      className={className}
-      classes={classes}
-      navSpec={navSpec}
-      showIds={true}
-      isOpen={isOpen}
-    />
+    <nav className={`main-navbar ${isOpen ? "main-navbar--open" : undefined}`}>
+      <ul>
+        {navSpec.map((item) => {
+          return (
+            <li key={item.id}>
+              <NavLink
+                className="nav-link"
+                to={item.path}
+                children={({ isActive }) => {
+                  return (
+                    <NavItem item={item} showId={true} isActive={isActive} />
+                  );
+                }}
+              />
+            </li>
+          );
+        })}
+      </ul>
+    </nav>
   );
 }
 

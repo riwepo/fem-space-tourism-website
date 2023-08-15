@@ -1,4 +1,4 @@
-.header {
+.main-navigation {
   position: relative;
 
   width: 100%;
@@ -11,16 +11,13 @@
   padding: 1rem;
 }
 
-.logo {
+.main-navigation > .logo {
   height: 3rem;
   width: 3rem;
   cursor: pointer;
 }
 
-.navBar {
-}
-
-.menu {
+.main-navigation .menu {
   position: absolute;
   top: 0;
   right: 0;
@@ -34,7 +31,7 @@
 }
 
 @media (min-width: 35rem) {
-  .menu {
+  .main-navigation .menu {
     display: none;
   }
 }

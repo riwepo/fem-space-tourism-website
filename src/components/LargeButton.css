@@ -1,4 +1,4 @@
-.a {
+.large-button a {
   position: relative;
   z-index: 1;
   display: grid;
@@ -9,7 +9,7 @@
   text-decoration: none;
   border-radius: 50%;
 }
-.a::after {
+.large-button a::after {
   position: absolute;
   z-index: -1;
   content: "";
@@ -20,20 +20,20 @@
   opacity: 0;
   transition: opacity 500ms linear, transform 500ms ease-in-out;
 }
-.a:hover::after,
-.a:focus::after {
+.large-button a:hover::after,
+.large-button a:focus::after {
   opacity: 1;
   transform: scale(1.5);
 }
 
 @media (min-width: 35rem) {
-  .a {
+  .large-button a {
     max-width: 15.1rem;
   }
 }
 
 @media (min-width: 45rem) {
-  .a {
+  .large-button a {
     max-width: 17.1rem;
   }
 }

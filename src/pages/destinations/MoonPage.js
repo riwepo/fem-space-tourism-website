@@ -1,11 +1,11 @@
 import React from "react";
 
-import classes from "./MoonPage.module.css";
+import "./MoonPage.css";
 
 function MoonPage() {
   return (
-    <div className={classes.container}>
-      <p className={classes.heading}>MoonPage</p>
+    <div className="moon-page">
+      <p>MoonPage</p>
     </div>
   );
 }

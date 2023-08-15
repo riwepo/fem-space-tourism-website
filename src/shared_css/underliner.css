@@ -9,7 +9,7 @@
   border-color: rgba(var(--clr-white), 0.5);
 }
 
-.indicator.indicatorActive {
+.indicator.indicator--active {
   border-color: rgba(var(--clr-white), 1);
 }
 
