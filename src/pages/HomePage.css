@@ -1,13 +1,29 @@
 .home-page h1 {
   padding-top: 4rem;
+  text-align: center;
 }
 
 .home-page p {
+  padding-left: 1rem;
+  padding-right: 1rem;
   padding-bottom: 4rem;
+  text-align: center;
 }
 
-.home-page .button {
-  padding-top: 4rem;
-  padding-left: 5rem;
-  padding-bottom: 4rem;
+@media (min-width: 45rem) {
+  .home-page h1 {
+    padding-top: 4rem;
+    text-align: left;
+  }
+  .home-page p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 4rem;
+    text-align: left;
+  }
+  .home-page .button {
+    padding-top: 4rem;
+    padding-left: 5rem;
+    padding-bottom: 4rem;
+  }
 }
