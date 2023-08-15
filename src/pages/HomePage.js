@@ -7,7 +7,7 @@ import "../shared_css/centered-grid.css";
 
 function HomePage() {
   return (
-    <div className={"home-page centered-grid"}>
+    <div className="home-page centered-grid">
       <div>
         <h1 className="ff-sans-cond fs-500 upper-case letter-spacing-1 text-accent">
           So you want to travel to
