@@ -8,7 +8,7 @@ import "../shared_css/centered-grid.css";
 function HomePage() {
   return (
     <div className="home-page centered-grid">
-      <div>
+      <div className="centered-grid-c2">
         <h1 className="ff-sans-cond fs-500 upper-case letter-spacing-1 text-accent">
           So you want to travel to
           <span className="ff-serif fs-900 upper-case text-light d-block">
@@ -22,7 +22,7 @@ function HomePage() {
           experience!
         </p>
       </div>
-      <div>
+      <div className="centered-grid-c3">
         <LargeButton className="button" />
       </div>
     </div>

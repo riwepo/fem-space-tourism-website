@@ -1,7 +1,7 @@
 .destination-layout > h1 {
-  grid-column: 2;
   grid-row: 1;
   white-space: nowrap;
+  padding-left: 1rem;
 }
 
 .destination-layout > h1 span {
@@ -11,12 +11,18 @@
 }
 
 .destination-layout > .navigation {
-  grid-column: 3;
   grid-row: 2;
 }
 
 .destination-layout > .section {
-  grid-column-start: 2 !important;
-  grid-column-end: 4 !important;
   grid-row: 3;
+}
+
+@media (min-width: 45rem) {
+  .destination-layout > h1 {
+    justify-self: start;
+  }
+  .destination-layout > .navigation {
+    grid-column: 3;
+  }
 }

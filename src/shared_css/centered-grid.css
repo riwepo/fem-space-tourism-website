@@ -13,11 +13,16 @@
     column-gap: var(--container-gap, 2rem);
   }
 
-  .centered-grid > *:first-child {
+  .centered-grid-c2 {
     grid-column: 2;
   }
 
-  .centered-grid > *:last-child {
+  .centered-grid-c3 {
     grid-column: 3;
+  }
+
+  .centered-grid-c23 {
+    grid-column-start: 2;
+    grid-column-end: span 2;
   }
 }
