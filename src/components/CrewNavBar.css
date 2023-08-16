@@ -1,0 +1,57 @@
+.destination-navbar {
+  /* we use this element as a spacer
+  and put the content in the middle column */
+  display: grid;
+  gap: 0;
+  grid-template-columns:
+    minmax(0, 6rem)
+    auto
+    minmax(0, 6rem);
+}
+
+.destination-navbar ul {
+  grid-column: 2;
+
+  list-style: none;
+  display: grid;
+  justify-content: space-between;
+  gap: 1.5rem;
+
+  /* the outer 2 columns are just for spacing as we resize */
+  grid-template-columns: repeat(4, auto);
+}
+
+.destination-navbar .nav-link {
+  --underline-gap: 0.5rem;
+  text-decoration: none;
+}
+
+@media (min-width: 35rem) {
+  /* we use this element as a spacer
+  and put the content in the middle column */
+  .destination-navbar {
+    display: grid;
+    gap: 0;
+    grid-template-columns:
+      minmax(0, 6rem)
+      auto
+      minmax(0, 6rem);
+  }
+  .destination-navbar ul {
+    grid-column: 2;
+
+    list-style: none;
+    display: grid;
+    justify-content: space-between;
+    gap: 1.5rem;
+
+    /* the outer 2 columns are just for spacing as we resize */
+    grid-template-columns: repeat(4, auto);
+  }
+}
+
+@media (min-width: 45rem) {
+  .destination-navbar ul {
+    gap: 4rem;
+  }
+}
