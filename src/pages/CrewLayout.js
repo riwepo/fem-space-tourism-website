@@ -12,9 +12,6 @@ function CrewLayout() {
     <>
       <div className="background background--crew"></div>
       <div className="crew-layout centered-grid">
-        <h1 className="ff-sans-con fs-500 upper-case letter-spacing-1 centered-grid-c23">
-          <span aria-hidden="true">01</span> Pick your crew
-        </h1>
         <CrewNavigation className="navigation" />
         <article className="article centered-grid-c23">
           <Outlet />
