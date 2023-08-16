@@ -17,7 +17,7 @@ function MoonPage() {
           there, take in some history by visiting the Luna 2 and Apollo 11
           landing sites.
         </p>
-        <div className="details">
+        <div className="details flex">
           <div>
             <p className="ff-serif-cond fs-200 text-accent upper-case letter-spacing-3">
               Avg. distance
