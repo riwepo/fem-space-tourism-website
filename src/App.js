@@ -8,9 +8,10 @@ import {
 import RootLayout from "./pages/RootLayout";
 import HomePage from "./pages/HomePage";
 import DestinationLayout from "./pages/DestinationLayout";
+import DestinationPage from "./pages/DestinationPage";
+import CrewLayout from "./pages/CrewLayout";
 import CrewPage from "./pages/CrewPage";
 import TechnologyPage from "./pages/TechnologyPage";
-import DestinationPage from "./pages/DestinationPage";
 import ErrorPage from "./pages/ErrorPage";
 
 import npmConfig from "../package.json";
@@ -35,7 +36,18 @@ const router = createBrowserRouter(
             { path: "titan", element: <DestinationPage /> },
           ],
         },
-        { path: "/crew", element: <CrewPage /> },
+        {
+          path: "/crew",
+          element: <CrewLayout />,
+          errorElement: <ErrorPage />,
+          children: [
+            { path: "", element: <Navigate to="01" replace /> },
+            { path: "01", element: <CrewPage /> },
+            { path: "02", element: <CrewPage /> },
+            { path: "03", element: <CrewPage /> },
+            { path: "04", element: <CrewPage /> },
+          ],
+        },
         { path: "/technology", element: <TechnologyPage /> },
       ],
     },
