@@ -13,12 +13,12 @@ function DestinationLayout() {
       <div className="background background--destination"></div>
       <div className="destination-layout centered-grid">
         <h1 className="ff-sans-con fs-500 upper-case letter-spacing-1 centered-grid-c23">
-          <span>01</span> Pick your destination
+          <span aria-hidden="true">01</span> Pick your destination
         </h1>
         <DestinationNavigation className="navigation" />
-        <section className="section">
+        <article className="article centered-grid-c23">
           <Outlet />
-        </section>
+        </article>
       </div>
     </>
   );
