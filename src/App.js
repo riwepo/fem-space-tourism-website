@@ -10,10 +10,7 @@ import HomePage from "./pages/HomePage";
 import DestinationLayout from "./pages/DestinationLayout";
 import CrewPage from "./pages/CrewPage";
 import TechnologyPage from "./pages/TechnologyPage";
-import MoonPage from "./pages/destinations/MoonPage";
-import MarsPage from "./pages/destinations/MarsPage";
-import EuropaPage from "./pages/destinations/EuropaPage";
-import TitanPage from "./pages/destinations/TitanPage";
+import DestinationPage from "./pages/DestinationPage";
 import ErrorPage from "./pages/ErrorPage";
 
 import npmConfig from "../package.json";
@@ -32,10 +29,10 @@ const router = createBrowserRouter(
           errorElement: <ErrorPage />,
           children: [
             { path: "", element: <Navigate to="moon" replace /> },
-            { path: "moon", element: <MoonPage /> },
-            { path: "mars", element: <MarsPage /> },
-            { path: "europa", element: <EuropaPage /> },
-            { path: "titan", element: <TitanPage /> },
+            { path: "moon", element: <DestinationPage /> },
+            { path: "mars", element: <DestinationPage /> },
+            { path: "europa", element: <DestinationPage /> },
+            { path: "titan", element: <DestinationPage /> },
           ],
         },
         { path: "/crew", element: <CrewPage /> },
