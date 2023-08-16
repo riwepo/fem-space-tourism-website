@@ -1,6 +1,8 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 
+import { getLastSegmentFromPath, getImagePath } from "../utils";
+
 import "../shared_css/centered-grid.css";
 import "./DestinationPage.css";
 
@@ -35,12 +37,6 @@ const destinationsData = [
   },
 ];
 
-const getLastSegmentFromPath = ({ pathname }) => {
-  const split = pathname.split("/");
-  const lastSegment = split.pop();
-  return lastSegment;
-};
-
 const getMatchingDestination = (data, name) => {
   const destinations = data.filter((item) => item.name.toLowerCase() === name);
   if (destinations.length !== 1) {
@@ -51,11 +47,6 @@ const getMatchingDestination = (data, name) => {
   return destinations[0];
 };
 
-const getImagePath = (destination) => {
-  const imagePath = `${process.env.PUBLIC_URL}/images/destination/image-${destination}.png`;
-  return imagePath;
-};
-
 function DestinationPage() {
   const path = useLocation();
   console.log(path);
@@ -63,7 +54,7 @@ function DestinationPage() {
   console.log(destination);
   const destinationData = getMatchingDestination(destinationsData, destination);
   console.log(destinationData);
-  const imagePath = getImagePath(destination);
+  const imagePath = getImagePath("destination", destination);
   console.log(imagePath);
   return (
     <div className="destination-page centered-grid">
