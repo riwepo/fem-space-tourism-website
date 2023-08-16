@@ -1,0 +1,12 @@
+.destination-page h2 {
+  text-align: center;
+}
+
+.destination-page p {
+  text-align: center;
+}
+
+.destination-page .details {
+  justify-content: center;
+  flex-direction: row;
+}
