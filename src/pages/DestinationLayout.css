@@ -1,3 +1,9 @@
+.background.background--destination {
+  background: url(../assets/destination/background-destination-mobile.jpg)
+    no-repeat center center;
+  background-size: cover;
+}
+
 .destination-layout > h1 {
   grid-row: 1;
   white-space: nowrap;
@@ -18,7 +24,20 @@
   grid-row: 3;
 }
 
+@media (min-width: 35rem) {
+  .background.background--destination {
+    background: url(../assets/destination/background-destination-tablet.jpg)
+      no-repeat center center;
+    background-size: cover;
+  }
+}
+
 @media (min-width: 45rem) {
+  .background.background--destination {
+    background: url(../assets/destination/background-destination-desktop.jpg)
+      no-repeat center center;
+    background-size: cover;
+  }
   .destination-layout > h1 {
     justify-self: start;
   }
