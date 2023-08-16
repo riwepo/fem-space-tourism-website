@@ -1,6 +1,8 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 
+import CrewSlider from "../components/CrewSlider";
+
 import { getLastSegmentFromPath, getImagePath } from "../utils";
 
 import "../shared_css/centered-grid.css";
@@ -61,36 +63,14 @@ function CrewPage() {
   const imagePath = getImagePath("crew", imageKey);
   //console.log(imagePath);
   return (
-    <div className="destination-page centered-grid">
+    <div className="crew-page centered-grid">
+      <div className="content centered-grid-c2">crew content</div>
+      <CrewSlider className="centered-grid-c2" />
       <img
         src={imagePath}
         alt={crewMemberData.name}
-        className="centered-grid-c2"
+        className="centered-grid-c3"
       />
-      <div className="centered-grid-c3">
-        <h2 className="ff-serif upper-case fs-800">{crewMemberData.name}</h2>
-        <p className="ff-sans-normal fs-400 text-accent">
-          {crewMemberData.description}
-        </p>
-        <div className="details flex">
-          <div>
-            <p className="ff-serif-cond fs-200 text-accent upper-case letter-spacing-3">
-              Avg. distance
-            </p>
-            <p className="ff-serif fs-500 upper-case">
-              {crewMemberData.distance}
-            </p>
-          </div>
-          <div>
-            <p className="ff-serif-cond fs-200 text-accent upper-case letter-spacing-3">
-              Est. travel time
-            </p>
-            <p className="ff-serif fs-500 upper-case">
-              {crewMemberData.travel}
-            </p>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }
