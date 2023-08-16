@@ -1,9 +1,4 @@
-.moon-page {
+.moon-page .details {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-}
-
-.moon-page h1 {
-  text-align: center;
 }
