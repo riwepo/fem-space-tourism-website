@@ -207,6 +207,11 @@ select {
   line-height: 1.1;
 }
 
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
 /*******************/
 /* utility classes */
 /* end             */
