@@ -49,13 +49,13 @@ const getMatchingDestination = (data, name) => {
 
 function DestinationPage() {
   const path = useLocation();
-  console.log(path);
+  //console.log(path);
   const destination = getLastSegmentFromPath(path);
-  console.log(destination);
+  //console.log(destination);
   const destinationData = getMatchingDestination(destinationsData, destination);
-  console.log(destinationData);
+  //console.log(destinationData);
   const imagePath = getImagePath("destination", destination);
-  console.log(imagePath);
+  //console.log(imagePath);
   return (
     <div className="destination-page centered-grid">
       <img

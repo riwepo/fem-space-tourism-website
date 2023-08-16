@@ -51,15 +51,15 @@ const getImageKeyFromName = (name) => {
 
 function CrewPage() {
   const path = useLocation();
-  console.log(path);
+  //console.log(path);
   const crewMemberId = getLastSegmentFromPath(path);
-  console.log(crewMemberId);
+  //console.log(crewMemberId);
   const crewMemberData = getMatchingCrewMember(crewData, crewMemberId);
-  console.log(crewMemberData);
+  //console.log(crewMemberData);
   const imageKey = getImageKeyFromName(crewMemberData.name);
-  console.log(imageKey);
+  //console.log(imageKey);
   const imagePath = getImagePath("crew", imageKey);
-  console.log(imagePath);
+  //console.log(imagePath);
   return (
     <div className="destination-page centered-grid">
       <img

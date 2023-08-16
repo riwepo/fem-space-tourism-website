@@ -3,9 +3,9 @@ import { Outlet } from "react-router-dom";
 
 import CrewNavigation from "../components/CrewNavigation";
 
-import "./CrewLayout.css";
 import "../shared_css/centered-grid.css";
 import "../shared_css/background.css";
+import "./CrewLayout.css";
 
 function CrewLayout() {
   return (

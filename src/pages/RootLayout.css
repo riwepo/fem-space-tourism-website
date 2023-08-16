@@ -1,0 +1,24 @@
+.root-layout .title-container {
+  display: none;
+}
+.root-layout .title-container.title-container--displayed {
+  display: grid;
+}
+
+.root-layout .title {
+  grid-row: 1;
+  white-space: nowrap;
+  padding-left: 1rem;
+}
+
+.root-layout .title span {
+  margin-right: 0.5em;
+  font-weight: 700;
+  color: rgba(var(--clr-white), 0.25);
+}
+
+@media (min-width: 45rem) {
+  .root-layout h1 {
+    justify-self: start;
+  }
+}
