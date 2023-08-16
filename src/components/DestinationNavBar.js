@@ -6,6 +6,10 @@ import NavItem from "./NavItem";
 import "./DestinationNavBar.css";
 
 function DestinationNavBar({ navSpec }) {
+  const navItemDisplay = {
+    showId: false,
+    indicatorClass: "nav-item-indicator-bottom",
+  };
   return (
     <nav className="destination-navbar">
       <ul>
@@ -17,7 +21,11 @@ function DestinationNavBar({ navSpec }) {
                 to={item.path}
                 children={({ isActive }) => {
                   return (
-                    <NavItem item={item} showId={false} isActive={isActive} />
+                    <NavItem
+                      item={item}
+                      display={navItemDisplay}
+                      isActive={isActive}
+                    />
                   );
                 }}
               />
