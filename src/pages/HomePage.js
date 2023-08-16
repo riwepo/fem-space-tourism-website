@@ -3,12 +3,13 @@ import React from "react";
 import LargeButton from "../components/LargeButton";
 
 import "./HomePage.css";
+import "../shared_css/background.css";
 import "../shared_css/centered-grid.css";
 
 function HomePage() {
   return (
     <>
-      <div className="background"></div>
+      <div className="background background--home"></div>
       <div className="home-page centered-grid">
         <div className="centered-grid-c2">
           <h1 className="ff-sans-cond fs-500 upper-case letter-spacing-1 text-accent">
