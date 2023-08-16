@@ -1,3 +1,12 @@
+.moon-page h2 {
+  text-align: center;
+}
+
+.moon-page p {
+  text-align: center;
+}
+
 .moon-page .details {
+  justify-content: center;
   flex-direction: row;
 }
