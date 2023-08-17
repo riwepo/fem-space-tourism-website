@@ -1,7 +1,7 @@
 import React from "react";
 
-import "./NavItem.css";
 import "../shared_css/nav-item-indicator.css";
+import "./NavItem.css";
 
 function NavItem({ item, display, isActive }) {
   const className = `uppercase text-light fs-300 ff-sans-cond letter-spacing-2 nav-item nav-item-indicator ${
