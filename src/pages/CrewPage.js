@@ -59,7 +59,15 @@ function CrewPage() {
   const imagePath = getImagePath("crew", imageKey);
   return (
     <div className="crew-page centered-grid">
-      <div className="content centered-grid-c2">crew content</div>
+      <div className="content centered-grid-c2">
+        <h2 className="ff-serif fs-700 text-light upper-case">
+          <span className="fs-600 d-block">{crewMemberData.role}</span>{" "}
+          {crewMemberData.name}
+        </h2>
+        <p className="ff-sans-normal fs-400 text-accent">
+          {crewMemberData.bio}
+        </p>
+      </div>
       <CrewNavigation className="navigation centered-grid-c2" />
       <img
         src={imagePath}

@@ -1,10 +1,20 @@
 .crew-page {
   grid-template-rows: 1fr auto;
+  justify-items: start;
 }
 
 .crew-page .content {
   grid-row: 3;
 }
+
+.crew-page .content h2 {
+  white-space: nowrap;
+}
+
+.crew-page .content h2 span {
+  color: rgba(var(--clr-white), 0.5);
+}
+
 .crew-page .navigation {
   grid-row: 2;
   padding-top: 1rem;
@@ -23,9 +33,20 @@
   .crew-page .navigation {
     grid-row: 2;
     padding-bottom: 2rem;
+    justify-self: self-start;
   }
   .crew-page img {
     grid-row-start: 1;
     grid-row-end: span 2;
+
+    padding-top: 4rem;
+  }
+  .crew-page .content h2 {
+    padding-top: 12rem;
+    padding-bottom: 2rem;
+  }
+
+  .crew-page .content h2 span {
+    padding-bottom: 2rem;
   }
 }
