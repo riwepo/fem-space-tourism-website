@@ -1,12 +1,12 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 
-import CrewSlider from "../components/CrewSlider";
+import CrewNavigation from "../components/CrewNavigation";
 
 import { getImagePath } from "../utils";
 
 import "../shared_css/centered-grid.css";
-import "./DestinationPage.css";
+import "./CrewPage.css";
 
 const crewData = [
   {
@@ -60,7 +60,7 @@ function CrewPage() {
   return (
     <div className="crew-page centered-grid">
       <div className="content centered-grid-c2">crew content</div>
-      <CrewSlider className="centered-grid-c2" />
+      <CrewNavigation className="navigation centered-grid-c2" />
       <img
         src={imagePath}
         alt={crewMemberData.name}

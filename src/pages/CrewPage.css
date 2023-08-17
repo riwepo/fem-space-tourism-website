@@ -1,12 +1,15 @@
-.destination-page h2 {
-  text-align: center;
+.crew-page {
 }
 
-.destination-page p {
-  text-align: center;
-}
-
-.destination-page .details {
-  justify-content: center;
-  flex-direction: row;
+@media (min-width: 45rem) {
+  .crew-page .content {
+    grid-row: 1;
+  }
+  .crew-page .navigation {
+    grid-row: 2;
+  }
+  .crew-page img {
+    grid-row-start: 1;
+    grid-row-end: span 2;
+  }
 }
