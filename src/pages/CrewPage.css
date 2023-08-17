@@ -1,4 +1,19 @@
 .crew-page {
+  grid-template-rows: 1fr auto;
+}
+
+.crew-page .content {
+  grid-row: 3;
+}
+.crew-page .navigation {
+  grid-row: 2;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.crew-page img {
+  grid-row: 1;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 @media (min-width: 45rem) {
@@ -7,6 +22,7 @@
   }
   .crew-page .navigation {
     grid-row: 2;
+    padding-bottom: 2rem;
   }
   .crew-page img {
     grid-row-start: 1;
