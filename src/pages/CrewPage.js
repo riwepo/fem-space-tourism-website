@@ -1,9 +1,9 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 import CrewSlider from "../components/CrewSlider";
 
-import { getLastSegmentFromPath, getImagePath } from "../utils";
+import { getImagePath } from "../utils";
 
 import "../shared_css/centered-grid.css";
 import "./DestinationPage.css";
@@ -52,16 +52,11 @@ const getImageKeyFromName = (name) => {
 };
 
 function CrewPage() {
-  const path = useLocation();
-  //console.log(path);
-  const crewMemberId = getLastSegmentFromPath(path);
-  //console.log(crewMemberId);
+  const params = useParams();
+  const crewMemberId = params.id;
   const crewMemberData = getMatchingCrewMember(crewData, crewMemberId);
-  //console.log(crewMemberData);
   const imageKey = getImageKeyFromName(crewMemberData.name);
-  //console.log(imageKey);
   const imagePath = getImagePath("crew", imageKey);
-  //console.log(imagePath);
   return (
     <div className="crew-page centered-grid">
       <div className="content centered-grid-c2">crew content</div>

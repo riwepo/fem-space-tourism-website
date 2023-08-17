@@ -1,7 +1,7 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
-import { getLastSegmentFromPath, getImagePath } from "../utils";
+import { getImagePath } from "../utils";
 
 import "../shared_css/centered-grid.css";
 import "./DestinationPage.css";
@@ -48,19 +48,18 @@ const getMatchingDestination = (data, name) => {
 };
 
 function DestinationPage() {
-  const path = useLocation();
-  //console.log(path);
-  const destination = getLastSegmentFromPath(path);
-  //console.log(destination);
-  const destinationData = getMatchingDestination(destinationsData, destination);
-  //console.log(destinationData);
-  const imagePath = getImagePath("destination", destination);
-  //console.log(imagePath);
+  const params = useParams();
+  const destinationId = params.id;
+  const destinationData = getMatchingDestination(
+    destinationsData,
+    destinationId
+  );
+  const imagePath = getImagePath("destination", destinationId);
   return (
     <div className="destination-page centered-grid">
       <img
         src={imagePath}
-        alt={destination.name}
+        alt={destinationData.name}
         className="centered-grid-c2"
       />
       <div className="centered-grid-c3">

@@ -30,10 +30,7 @@ const router = createBrowserRouter(
           errorElement: <ErrorPage />,
           children: [
             { path: "", element: <Navigate to="moon" replace /> },
-            { path: "moon", element: <DestinationPage /> },
-            { path: "mars", element: <DestinationPage /> },
-            { path: "europa", element: <DestinationPage /> },
-            { path: "titan", element: <DestinationPage /> },
+            { path: ":id", element: <DestinationPage /> },
           ],
         },
         {
@@ -42,10 +39,7 @@ const router = createBrowserRouter(
           errorElement: <ErrorPage />,
           children: [
             { path: "", element: <Navigate to="01" replace /> },
-            { path: "01", element: <CrewPage /> },
-            { path: "02", element: <CrewPage /> },
-            { path: "03", element: <CrewPage /> },
-            { path: "04", element: <CrewPage /> },
+            { path: ":id", element: <CrewPage /> },
           ],
         },
         { path: "/technology", element: <TechnologyPage /> },

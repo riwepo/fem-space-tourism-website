@@ -20,7 +20,6 @@ function RootLayout() {
   const path = useLocation();
   const title = getTitle(path.pathname);
   const [titleIndex, titleText] = title;
-  console.log(title);
 
   return (
     <div className="root-layout">
