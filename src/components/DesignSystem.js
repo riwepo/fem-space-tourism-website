@@ -1,5 +1,8 @@
 import React from "react";
 
+import LargeButton from "./LargeButton";
+
+import "../css/utils/numbered-title.css";
 import "./DesignSystem.css";
 
 function DesignSystem() {
@@ -7,7 +10,7 @@ function DesignSystem() {
     <div className="container">
       <h1 className="ff-serif">Design System</h1>
       <section id="colors">
-        <h2>
+        <h2 className="numbered-title">
           <span>01</span> colors
         </h2>
 
@@ -60,11 +63,11 @@ function DesignSystem() {
       </section>
 
       <section id="typography" style={{ margin: "4rem 0" }}>
-        <h2>
+        <h2 className="numbered-title">
           <span>02 </span>Typography
         </h2>
         <div className="flex">
-          <div style={{ flexBasis: "100%" }}>
+          <div className="flow flow-space" style={{ flexBasis: "100%" }}>
             <div>
               <p className="text-accent">
                 Heading 1 - Bellefair Regular - 150px
@@ -102,7 +105,7 @@ function DesignSystem() {
             </div>
           </div>
 
-          <div style={{ flexBasis: "100%" }}>
+          <div className="flow flow-space" style={{ flexBasis: "100%" }}>
             <div>
               <p className="text-accent">
                 Subheading 1 - Bellefair Regular - 28px
@@ -145,6 +148,27 @@ function DesignSystem() {
                 dapibus id, mattis vel, nisi.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+      <section id="interactive-elements">
+        <h2 className="numbered-title">
+          <span>03</span> Interactive elements
+        </h2>
+
+        {/* <!-- navigation --> */}
+        <div></div>
+
+        <div className="flex">
+          <LargeButton />
+          <div>{/* <!-- explore button --> */}</div>
+
+          <div>
+            {/* <!-- Tabs --> */}
+
+            {/* <!-- Dots --> */}
+
+            {/* <!-- Numbers --> */}
           </div>
         </div>
       </section>

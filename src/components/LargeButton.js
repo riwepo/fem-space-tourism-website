@@ -5,10 +5,7 @@ import "./LargeButton.css";
 function LargeButton({ className }) {
   return (
     <div className={`large-button ${className}`}>
-      <a
-        href="#dummy"
-        className="upper-case ff-serif text-dark bg-light fs-600"
-      >
+      <a href="#" className="ff-serif fs-600 upper-case text-dark bg-light">
         Explore
       </a>
     </div>
