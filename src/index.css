@@ -1,3 +1,4 @@
+@import "./reset.css";
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;600&family=Bellefair&display=swap");
 
 /*********************/
@@ -55,58 +56,6 @@
 /* custom properties */
 /* end               */
 /*********************/
-
-/*****************/
-/* general reset */
-/* start         */
-/*****************/
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  line-height: 1.5;
-  min-height: 100vh;
-}
-
-image,
-picture {
-  max-width: 100%;
-  display: block;
-}
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-    scroll-behavior: auto;
-  }
-
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
-/*****************/
-/* general reset */
-/* end           */
-/*****************/
 
 /*******************/
 /* utility classes */
