@@ -1,4 +1,5 @@
 @import "./reset.css";
+@import "./debug-borders.css";
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;600&family=Bellefair&display=swap");
 
 /*********************/
@@ -62,13 +63,20 @@
 /* start           */
 /*******************/
 
-.d-block {
-  display: block;
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
 }
 
-/* add a bottom margin to all children except last */
-.flow > *:where(:not(:last-child)) {
-  margin-bottom: var(--flow-space, 1rem);
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+.container {
+  padding-inline: 2em;
+  margin-inline: auto;
+  max-width: 80rem;
 }
 
 .sr-only {
@@ -79,8 +87,17 @@
   margin: -1px;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
+  white-space: nowrap; /* added line */
   border: 0;
+}
+
+.d-block {
+  display: block;
+}
+
+/* add a bottom margin to all children except last */
+.flow > *:where(:not(:last-child)) {
+  margin-bottom: var(--flow-space, 1rem);
 }
 
 .bg-dark {
@@ -184,33 +201,3 @@ h6,
 p {
   font-weight: 400;
 }
-
-/*********************/
-/* debugging borders */
-/* start             */
-/*********************/
-div,
-header,
-nav {
-  border: solid 1px red;
-}
-
-@media (min-width: 35rem) {
-  div,
-  header,
-  nav {
-    border: solid 1px green;
-  }
-}
-
-@media (min-width: 45rem) {
-  div,
-  header,
-  nav {
-    border: solid 1px blue;
-  }
-}
-/*********************/
-/* debugging borders */
-/* end               */
-/*********************/
