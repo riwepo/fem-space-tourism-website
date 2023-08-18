@@ -3,7 +3,7 @@ import { Outlet, useLocation } from "react-router-dom";
 
 import MainNavigation from "../components/MainNavigation";
 
-import "../shared_css/centered-grid.css";
+import "../css/utils/centered-grid.css";
 import "./RootLayout.css";
 
 const getTitle = (path) => {

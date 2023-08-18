@@ -2,9 +2,9 @@ import React from "react";
 
 import LargeButton from "../components/LargeButton";
 
+import "../css/utils/background.css";
+import "../css/utils/centered-grid.css";
 import "./HomePage.css";
-import "../shared_css/background.css";
-import "../shared_css/centered-grid.css";
 
 function HomePage() {
   return (

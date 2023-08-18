@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 
 import { getImagePath } from "../utils";
 
-import "../shared_css/centered-grid.css";
+import "../css/utils/centered-grid.css";
 import "./DestinationPage.css";
 
 const destinationsData = [

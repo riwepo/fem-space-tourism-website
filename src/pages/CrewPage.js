@@ -5,7 +5,7 @@ import CrewNavigation from "../components/CrewNavigation";
 
 import { getImagePath } from "../utils";
 
-import "../shared_css/centered-grid.css";
+import "../css/utils/centered-grid.css";
 import "./CrewPage.css";
 
 const crewData = [

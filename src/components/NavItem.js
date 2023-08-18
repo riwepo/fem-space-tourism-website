@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../shared_css/nav-item-indicator.css";
+import "../css/utils/nav-item-indicator.css";
 import "./NavItem.css";
 
 function NavItem({ item, display, isActive }) {

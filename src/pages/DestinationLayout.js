@@ -3,8 +3,8 @@ import { Outlet } from "react-router-dom";
 
 import DestinationNavigation from "../components/DestinationNavigation";
 
-import "../shared_css/centered-grid.css";
-import "../shared_css/background.css";
+import "../css/utils/centered-grid.css";
+import "../css/utils/background.css";
 import "./DestinationLayout.css";
 
 function DestinationLayout() {
