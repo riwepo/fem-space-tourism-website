@@ -159,8 +159,8 @@ function DesignSystem() {
         {/* <!-- navigation --> */}
         <div></div>
 
-        <div className="flex">
-          <LargeButton />
+        <div className="flex" style={{ marginTop: "5rem" }}>
+          <LargeButton className={undefined} />
           <div>{/* <!-- explore button --> */}</div>
 
           <div>

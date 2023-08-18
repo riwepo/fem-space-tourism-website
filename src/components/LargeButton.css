@@ -2,38 +2,27 @@
   position: relative;
   z-index: 1;
   display: grid;
-  padding: 0 2em;
-  max-width: 9.4rem;
-  aspect-ratio: 1;
   place-items: center;
-  text-decoration: none;
+  padding: 0 2em;
   border-radius: 50%;
+  aspect-ratio: 1;
+  text-decoration: none;
 }
+
 .large-button a::after {
+  content: "";
   position: absolute;
   z-index: -1;
-  content: "";
   background: rgba(var(--clr-white), 0.15);
   width: 100%;
   height: 100%;
   border-radius: 50%;
   opacity: 0;
-  transition: opacity 500ms linear, transform 500ms ease-in-out;
+  transition: opacity 500ms linear, transform 750ms ease-in-out;
 }
+
 .large-button a:hover::after,
 .large-button a:focus::after {
   opacity: 1;
   transform: scale(1.5);
-}
-
-@media (min-width: 35rem) {
-  .large-button a {
-    max-width: 15.1rem;
-  }
-}
-
-@media (min-width: 45rem) {
-  .large-button a {
-    max-width: 17.1rem;
-  }
 }
