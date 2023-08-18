@@ -15,15 +15,15 @@
 
   /* fonts */
 
-  /* font sizes */
-  --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
-  --fs-800: 3.5rem;
-  --fs-700: 1.5rem;
-  --fs-600: 1rem;
-  --fs-500: 1rem;
-  --fs-400: 0.9375rem;
-  --fs-300: 1rem;
-  --fs-200: 0.875rem;
+  /* font sizes asuming 1rem = 10px */
+  --fs-900: clamp(8rem, 8vw + 1rem, 15rem);
+  --fs-800: 5.6rem;
+  --fs-700: 2.4rem;
+  --fs-600: 1.6rem;
+  --fs-500: 1.6rem;
+  --fs-400: 1.5rem;
+  --fs-300: 1.6rem;
+  --fs-200: 1.4rem;
 
   /* font families */
   --ff-serif: "Bellefair", serif;
@@ -33,23 +33,23 @@
 
 @media (min-width: 35rem) {
   :root {
-    /* font sizes */
-    --fs-800: 5rem;
-    --fs-700: 2.5rem;
-    --fs-600: 1.5rem;
-    --fs-500: 1.25rem;
-    --fs-400: 1rem;
+    /* font sizes asuming 1rem = 10px */
+    --fs-800: 8rem;
+    --fs-700: 4rem;
+    --fs-600: 2.4rem;
+    --fs-500: 2rem;
+    --fs-400: 1.6rem;
   }
 }
 
 @media (min-width: 45rem) {
   :root {
-    /* font sizes */
-    --fs-800: 6.25rem;
-    --fs-700: 3.5rem;
-    --fs-600: 2rem;
-    --fs-500: 1.75rem;
-    --fs-400: 1.125rem;
+    /* font sizes asuming 1rem = 10px */
+    --fs-800: 10rem;
+    --fs-700: 5.6rem;
+    --fs-600: 3.2rem;
+    --fs-500: 2.8rem;
+    --fs-400: 1.8rem;
   }
 }
 
@@ -182,6 +182,10 @@
 /* utility classes */
 /* end             */
 /*******************/
+
+html {
+  font-size: 62.5%;
+}
 
 body {
   font-family: var(--ff-sans-normal);

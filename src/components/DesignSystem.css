@@ -1,0 +1,9 @@
+.fred {
+  --gap: 5rem;
+}
+
+.box {
+  background: lightblue;
+  padding: 3rem;
+  /* --gap: 15rem; */
+}
