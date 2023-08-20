@@ -62,6 +62,9 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
+Style based on mobile first.
+Write html based on desktop first, has the most complexity.
+
 First challenge using react-router-dom.js
 
 How to pre-set a set of design fonts with CSS variables, including weight, size and family.
