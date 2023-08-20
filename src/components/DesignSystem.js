@@ -7,6 +7,7 @@ import "../css/utils/underline-indicators.css";
 import "./DesignSystem.css";
 import PrimaryNavigation from "./PrimaryNavigation";
 import TabList from "./TabList";
+import DotIndicators from "./DotIndicators";
 
 function DesignSystem() {
   return (
@@ -159,7 +160,6 @@ function DesignSystem() {
           <span>03</span> Interactive elements
         </h2>
 
-        {/* <!-- navigation --> */}
         <div>
           <PrimaryNavigation />
         </div>
@@ -167,10 +167,9 @@ function DesignSystem() {
         <div className="flex" style={{ marginTop: "5rem" }}>
           <LargeButton className={undefined} />
 
-          <div>
+          <div className="flow">
             <TabList />
-
-            {/* <!-- Dots --> */}
+            <DotIndicators />
 
             {/* <!-- Numbers --> */}
           </div>
