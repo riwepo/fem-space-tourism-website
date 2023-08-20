@@ -1,0 +1,25 @@
+.numbered-indicators {
+  --gap: 2rem;
+}
+
+.numbered-indicators > * {
+  border: 0;
+  padding: 0.5em;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  cursor: pointer;
+  color: rgb(var(--clr-white));
+  border: solid 0.1em rgba(var(--clr-white), 25%);
+  background-color: rgb(var(--clr-black));
+}
+
+.numbered-indicators > *:hover,
+.numbered-indicators > *:focus {
+  border-color: rgba(var(--clr-white), 50%);
+}
+
+.numbered-indicators > [aria-selected="true"] {
+  color: rgb(var(--clr-black));
+  border-color: rgb(var(--clr-white));
+  background-color: rgb(var(--clr-white));
+}

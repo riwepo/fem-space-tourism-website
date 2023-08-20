@@ -8,6 +8,7 @@ import "./DesignSystem.css";
 import PrimaryNavigation from "./PrimaryNavigation";
 import TabList from "./TabList";
 import DotIndicators from "./DotIndicators";
+import NumberedIndicators from "./NumberedIndicators";
 
 function DesignSystem() {
   return (
@@ -170,8 +171,7 @@ function DesignSystem() {
           <div className="flow">
             <TabList />
             <DotIndicators />
-
-            {/* <!-- Numbers --> */}
+            <NumberedIndicators />
           </div>
         </div>
       </section>
