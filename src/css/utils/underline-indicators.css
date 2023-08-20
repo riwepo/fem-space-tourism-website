@@ -1,0 +1,13 @@
+.underline-indicators > * {
+  padding: var(--underline-gap, 1em) 0;
+  border-bottom: solid 0.2rem rgb(var(--clr-white), 0%);
+}
+
+.underline-indicators > *:hover,
+.underline-indicators > *:focus {
+  border-color: rgb(var(--clr-white), 50%);
+}
+
+.underline-indicators > .active {
+  border-color: rgb(var(--clr-white), 100%);
+}

@@ -4,6 +4,7 @@ import LargeButton from "./LargeButton";
 
 import "../css/utils/numbered-title.css";
 import "./DesignSystem.css";
+import PrimaryNavigation from "./PrimaryNavigation";
 
 function DesignSystem() {
   return (
@@ -157,7 +158,9 @@ function DesignSystem() {
         </h2>
 
         {/* <!-- navigation --> */}
-        <div></div>
+        <div>
+          <PrimaryNavigation />
+        </div>
 
         <div className="flex" style={{ marginTop: "5rem" }}>
           <LargeButton className={undefined} />
