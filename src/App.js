@@ -14,7 +14,7 @@ import CrewPage from "./pages/CrewPage";
 import TechnologyPage from "./pages/TechnologyPage";
 import ErrorPage from "./pages/ErrorPage";
 
-import DesignSystem from "./components/DesignSystem";
+// import DesignSystem from "./components/DesignSystem";
 
 import npmConfig from "../package.json";
 
@@ -28,23 +28,19 @@ const router = createBrowserRouter(
         { path: "/", element: <HomePage /> },
         {
           path: "/destination",
-          element: <DestinationLayout />,
+          element: <DestinationPage />,
           errorElement: <ErrorPage />,
-          children: [
-            { path: "", element: <Navigate to="moon" replace /> },
-            { path: ":id", element: <DestinationPage /> },
-          ],
         },
         {
           path: "/crew",
-          element: <CrewLayout />,
+          element: <CrewPage />,
           errorElement: <ErrorPage />,
-          children: [
-            { path: "", element: <Navigate to="01" replace /> },
-            { path: ":id", element: <CrewPage /> },
-          ],
         },
-        { path: "/technology", element: <TechnologyPage /> },
+        {
+          path: "/technology",
+          errorElement: <ErrorPage />,
+          element: <TechnologyPage />,
+        },
       ],
     },
   ],
@@ -52,8 +48,8 @@ const router = createBrowserRouter(
 );
 
 function App() {
-  // return <RouterProvider router={router} />;
-  return <DesignSystem />;
+  return <RouterProvider router={router} />;
+  // return <DesignSystem />;
 }
 
 export default App;
