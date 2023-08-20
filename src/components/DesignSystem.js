@@ -3,8 +3,10 @@ import React from "react";
 import LargeButton from "./LargeButton";
 
 import "../css/utils/numbered-title.css";
+import "../css/utils/underline-indicators.css";
 import "./DesignSystem.css";
 import PrimaryNavigation from "./PrimaryNavigation";
+import TabList from "./TabList";
 
 function DesignSystem() {
   return (
@@ -164,10 +166,9 @@ function DesignSystem() {
 
         <div className="flex" style={{ marginTop: "5rem" }}>
           <LargeButton className={undefined} />
-          <div>{/* <!-- explore button --> */}</div>
 
           <div>
-            {/* <!-- Tabs --> */}
+            <TabList />
 
             {/* <!-- Dots --> */}
 
