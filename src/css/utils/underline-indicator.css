@@ -11,7 +11,7 @@
 }
 
 .underline-indicator.active,
-.underline-indicator [aria-selected="true"] {
+.underline-indicator[aria-selected="true"] {
   color: rgb(var(--clr-white), 100%);
   border-color: rgb(var(--clr-white), 100%);
 }
