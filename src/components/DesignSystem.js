@@ -3,7 +3,7 @@ import React from "react";
 import LargeButton from "./LargeButton";
 
 import "../css/utils/numbered-title.css";
-import "../css/utils/underline-indicators.css";
+import "../css/utils/underline-indicator.css";
 import "./DesignSystem.css";
 import PrimaryNavigation from "./PrimaryNavigation";
 import TabList from "./TabList";
