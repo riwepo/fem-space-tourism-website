@@ -1,31 +1,12 @@
-/* .root-layout .title-container {
-  display: none;
-}
-.root-layout .title-container.title-container--displayed {
-  display: grid;
-}
-
-.root-layout .title {
-  grid-row: 1;
-  white-space: nowrap;
-  padding-left: 1rem;
-}
-
-.root-layout .title span {
-  margin-right: 0.5em;
-  font-weight: 700;
-  color: rgba(var(--clr-white), 0.25);
-}
-
-@media (min-width: 720px) {
-  .root-layout h1 {
-    justify-self: start;
-  }
-} */
-
 /* use the full view height for our content below the header */
 .root-layout {
   display: grid;
   min-height: 100vh;
   grid-template-rows: min-content 1fr;
+
+  /* border: solid 1px red; */
+}
+
+.root-layout main {
+  /* background-color: red; */
 }

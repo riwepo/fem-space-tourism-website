@@ -1,48 +1,26 @@
 .background.background--home {
-  background: url(../assets/home/background-home-mobile.jpg) no-repeat center
-    center;
   background-size: cover;
-}
-
-.home-page h1 {
-  padding-top: 4rem;
-  text-align: center;
-}
-
-.home-page p {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 4rem;
-  text-align: center;
+  background-position: bottom center;
+  background-image: url(../assets/home/background-home-mobile.jpg);
 }
 
 @media (min-width: 560px) {
   .background.background--home {
-    background: url(../assets/home/background-home-tablet.jpg) no-repeat center
-      center;
     background-size: cover;
+    background-position: bottom center;
+    background-image: url(../assets/home/background-home-tablet.jpg);
   }
 }
 
 @media (min-width: 720px) {
   .background.background--home {
-    background: url(../assets/home/background-home-desktop.jpg) no-repeat center
-      center;
     background-size: cover;
+    background-position: bottom center;
+    background-image: url(../assets/home/background-home-desktop.jpg);
   }
-  .home-page h1 {
-    padding-top: 4rem;
-    text-align: left;
-  }
-  .home-page p {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 4rem;
-    text-align: left;
-  }
-  .home-page .button {
-    padding-top: 4rem;
-    padding-left: 5rem;
-    padding-bottom: 4rem;
-  }
+}
+
+.grid-container--home {
+  padding-bottom: max(6rem, 15vh);
+  align-items: end;
 }
