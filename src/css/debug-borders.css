@@ -9,7 +9,7 @@ nav {
   border: solid 1px red;
 }
 
-@media (min-width: 35rem) {
+@media (min-width: 560px) {
   div,
   header,
   nav {
@@ -17,7 +17,7 @@ nav {
   }
 }
 
-@media (min-width: 45rem) {
+@media (min-width: 720px) {
   div,
   header,
   nav {

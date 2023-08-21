@@ -24,7 +24,7 @@
   grid-row: 3;
 }
 
-@media (min-width: 35rem) {
+@media (min-width: 560px) {
   .background.background--destination {
     background: url(../assets/destination/background-destination-tablet.jpg)
       no-repeat center center;
@@ -32,7 +32,7 @@
   }
 }
 
-@media (min-width: 45rem) {
+@media (min-width: 720px) {
   .background.background--destination {
     background: url(../assets/destination/background-destination-desktop.jpg)
       no-repeat center center;

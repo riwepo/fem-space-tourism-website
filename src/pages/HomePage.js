@@ -12,9 +12,9 @@ function HomePage() {
       <div className="background background--home"></div>
       <div className="home-page centered-grid">
         <div className="centered-grid-c2">
-          <h1 className="ff-sans-cond fs-500 upper-case letter-spacing-1 text-accent">
+          <h1 className="ff-sans-cond fs-500 uppercase letter-spacing-1 text-accent">
             So you want to travel to
-            <span className="ff-serif fs-900 upper-case text-light d-block">
+            <span className="ff-serif fs-900 uppercase text-light d-block">
               Space
             </span>
           </h1>

@@ -1,4 +1,4 @@
-.root-layout .title-container {
+/* .root-layout .title-container {
   display: none;
 }
 .root-layout .title-container.title-container--displayed {
@@ -17,8 +17,15 @@
   color: rgba(var(--clr-white), 0.25);
 }
 
-@media (min-width: 45rem) {
+@media (min-width: 720px) {
   .root-layout h1 {
     justify-self: start;
   }
+} */
+
+/* use the full view height for our content below the header */
+.root-layout {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: min-content 1fr;
 }

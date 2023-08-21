@@ -1,12 +1,13 @@
 .large-button a {
   position: relative;
   z-index: 1;
-  display: grid;
+  display: inline-grid;
   place-items: center;
   padding: 0 2em;
   border-radius: 50%;
   aspect-ratio: 1;
   text-decoration: none;
+  font-size: 2rem;
 }
 
 .large-button a::after {

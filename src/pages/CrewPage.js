@@ -60,7 +60,7 @@ function CrewPage() {
   return (
     <div className="crew-page centered-grid">
       <div className="content centered-grid-c2">
-        <h2 className="ff-serif fs-700 text-light upper-case">
+        <h2 className="ff-serif fs-700 text-light uppercase">
           <span className="fs-600 d-block">{crewMemberData.role}</span>{" "}
           {crewMemberData.name}
         </h2>

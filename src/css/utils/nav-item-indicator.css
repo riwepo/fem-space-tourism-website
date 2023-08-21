@@ -15,7 +15,7 @@
   border-right: 0.2rem solid rgba(var(--clr-white), 0);
 }
 
-@media (min-width: 35rem) {
+@media (min-width: 560px) {
   .nav-item-indicator.nav-item-indicator-reactive {
     border-right: none;
     border-bottom: 0.2rem solid rgba(var(--clr-white), 0);

@@ -63,24 +63,24 @@ function DestinationPage() {
         className="centered-grid-c2"
       />
       <div className="centered-grid-c3">
-        <h2 className="ff-serif upper-case fs-800">{destinationData.name}</h2>
+        <h2 className="ff-serif uppercase fs-800">{destinationData.name}</h2>
         <p className="ff-sans-normal fs-400 text-accent">
           {destinationData.description}
         </p>
         <div className="details flex">
           <div>
-            <p className="ff-serif-cond fs-200 text-accent upper-case letter-spacing-3">
+            <p className="ff-serif-cond fs-200 text-accent uppercase letter-spacing-3">
               Avg. distance
             </p>
-            <p className="ff-serif fs-500 upper-case">
+            <p className="ff-serif fs-500 uppercase">
               {destinationData.distance}
             </p>
           </div>
           <div>
-            <p className="ff-serif-cond fs-200 text-accent upper-case letter-spacing-3">
+            <p className="ff-serif-cond fs-200 text-accent uppercase letter-spacing-3">
               Est. travel time
             </p>
-            <p className="ff-serif fs-500 upper-case">
+            <p className="ff-serif fs-500 uppercase">
               {destinationData.travel}
             </p>
           </div>

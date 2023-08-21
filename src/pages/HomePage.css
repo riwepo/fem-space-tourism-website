@@ -16,7 +16,7 @@
   text-align: center;
 }
 
-@media (min-width: 35rem) {
+@media (min-width: 560px) {
   .background.background--home {
     background: url(../assets/home/background-home-tablet.jpg) no-repeat center
       center;
@@ -24,7 +24,7 @@
   }
 }
 
-@media (min-width: 45rem) {
+@media (min-width: 720px) {
   .background.background--home {
     background: url(../assets/home/background-home-desktop.jpg) no-repeat center
       center;
