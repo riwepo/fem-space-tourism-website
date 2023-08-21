@@ -7,7 +7,7 @@
 @media (min-width: 560px) {
   .background.background--home {
     background-size: cover;
-    background-position: bottom center;
+    background-position: center center;
     background-image: url(../assets/home/background-home-tablet.jpg);
   }
 }
@@ -15,7 +15,7 @@
 @media (min-width: 720px) {
   .background.background--home {
     background-size: cover;
-    background-position: bottom center;
+    background-position: right center;
     background-image: url(../assets/home/background-home-desktop.jpg);
   }
 }
