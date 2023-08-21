@@ -14,9 +14,9 @@ import CrewPage from "./pages/CrewPage";
 import TechnologyPage from "./pages/TechnologyPage";
 import ErrorPage from "./pages/ErrorPage";
 
-// import DesignSystem from "./components/DesignSystem";
-
 import npmConfig from "../package.json";
+
+import DesignSystemPage from "./pages/DesignSystemPage";
 
 const router = createBrowserRouter(
   [
@@ -47,9 +47,20 @@ const router = createBrowserRouter(
   { basename: `/${npmConfig.name}` }
 );
 
+const designSystemRouter = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <RootLayout />,
+      errorElement: <ErrorPage />,
+      children: [{ path: "/", element: <DesignSystemPage /> }],
+    },
+  ],
+  { basename: `/${npmConfig.name}` }
+);
+
 function App() {
-  return <RouterProvider router={router} />;
-  // return <DesignSystem />;
+  return <RouterProvider router={designSystemRouter} />;
 }
 
 export default App;

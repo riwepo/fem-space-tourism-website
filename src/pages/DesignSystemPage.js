@@ -1,16 +1,16 @@
 import React from "react";
 
-import LargeButton from "./LargeButton";
+import LargeButton from "../components/LargeButton";
+import PrimaryNavigation from "../components/PrimaryNavigation";
+import TabList from "../components/TabList";
+import DotIndicators from "../components/DotIndicators";
+import NumberedIndicators from "../components/NumberedIndicators";
 
 import "../css/utils/numbered-title.css";
 import "../css/utils/underline-indicator.css";
-import "./DesignSystem.css";
-import PrimaryNavigation from "./PrimaryNavigation";
-import TabList from "./TabList";
-import DotIndicators from "./DotIndicators";
-import NumberedIndicators from "./NumberedIndicators";
+import "./DesignSystemPage.css";
 
-function DesignSystem() {
+function DesignSystemPage() {
   return (
     <div className="container">
       <h1 className="ff-serif">Design System</h1>
@@ -179,4 +179,4 @@ function DesignSystem() {
   );
 }
 
-export default DesignSystem;
+export default DesignSystemPage;
