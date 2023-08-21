@@ -1,17 +1,17 @@
-.underline-indicators > * {
+.underline-indicator {
   padding: var(--underline-gap, 1em) 0;
   border: 0;
   cursor: pointer;
   border-bottom: solid 0.2rem rgb(var(--clr-white), 0%);
 }
 
-.underline-indicators > *:hover,
-.underline-indicators > *:focus {
+.underline-indicator:hover,
+.underline-indicator:focus {
   border-color: rgb(var(--clr-white), 50%);
 }
 
-.underline-indicators > .active,
-.underline-indicators > [aria-selected="true"] {
+.underline-indicator.active,
+.underline-indicator [aria-selected="true"] {
   color: rgb(var(--clr-white), 100%);
   border-color: rgb(var(--clr-white), 100%);
 }

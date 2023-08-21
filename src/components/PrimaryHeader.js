@@ -24,7 +24,7 @@ function PrimaryHeader() {
       <div>
         <img className="logo" src={logo} alt="space logo" />
       </div>
-      {/* <PrimaryNavigation navSpec={mainNavSpec} isOpen={isMenuOpen} /> */}
+      <PrimaryNavigation isOpen={isMenuOpen} />
       {!isMenuOpen && (
         <img
           className="menu"
