@@ -65,6 +65,11 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 Style based on mobile first.
 Write html based on desktop first, has the most complexity.
 
+For Kevin his outer-most container is the body. He sets it to min-height 100vh so our container grid uses the full screen height. For us we can't do this as in react and also react-router there are a couple of divs in between. We can achieve the same effect by setting min-height 100vh on the root layout div.
+
+So you want to travel to space.
+We considered this as one sentence, put it all in a h1, and used span to messwith the display.
+
 First challenge using react-router-dom.js
 
 How to pre-set a set of design fonts with CSS variables, including weight, size and family.
@@ -94,6 +99,9 @@ Kevin Powel writes his HTML desktop first because it is more complex, then when 
 If putting img in a flex container, wrap it in a div to avoid some bugs in the Chrome browser.
 
 Using a clamp on large fonts, based on vw or viewport unit, means that the font continaully changes size as we re-size the screen, doesn't just break at the media query point.
+
+For media query breakpoints in 2023 we should use px, see
+https://cgamesplay.com/post/2023/05/19/stop-using-em-in-media-queries/
 
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
