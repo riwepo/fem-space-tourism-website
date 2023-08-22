@@ -4,8 +4,14 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  background: rgba(var(--clr-white), 2%);
-  backdrop-filter: blur(5rem);
+  background: rgba(var(--clr-black), 95%);
+}
+
+@supports (backdrop-filter: blur(5rem)) {
+  .primary-navigation {
+    background: rgba(var(--clr-white), 2%);
+    backdrop-filter: blur(5rem);
+  }
 }
 
 @media (max-width: 560px) {
