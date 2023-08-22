@@ -109,6 +109,8 @@ Use of inset property
 
 Reverse media query for mobile menu i.e. put more complex mobile code in a max width query
 
+@supports with property/value pairs checks if can use in current browser
+
 ### Continued development
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
