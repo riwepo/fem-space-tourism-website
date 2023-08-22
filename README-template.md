@@ -111,6 +111,10 @@ Reverse media query for mobile menu i.e. put more complex mobile code in a max w
 
 @supports with property/value pairs checks if can use in current browser
 
+Can use a data attribute to communicate state to css, rather than adding another class
+
+focus-visible attribute
+
 ### Continued development
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
