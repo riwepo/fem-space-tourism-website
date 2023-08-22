@@ -56,7 +56,7 @@
     aspect-ratio: 1;
   }
 
-  .primary-header .mobile-nav-toggle.open {
+  .primary-header .mobile-nav-toggle[data-is-menu-open="true"] {
     background-image: url(../assets/shared/icon-close.svg);
   }
 }

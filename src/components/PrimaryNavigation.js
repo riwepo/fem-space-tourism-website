@@ -14,7 +14,7 @@ const navSpec = [
 function PrimaryNavigation({ isOpen }) {
   return (
     <nav>
-      <ul className={`primary-navigation flex ${isOpen ? "open" : undefined}`}>
+      <ul className="primary-navigation flex" data-is-open={isOpen}>
         {navSpec.map((item) => {
           return (
             <li key={item.id}>

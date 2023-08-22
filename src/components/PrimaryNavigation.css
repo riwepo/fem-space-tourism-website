@@ -28,7 +28,7 @@
     transition: transform 300ms ease-in-out;
   }
 
-  .primary-navigation.open {
+  .primary-navigation[data-is-open="true"] {
     transform: translateX(0);
   }
 
