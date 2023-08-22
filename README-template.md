@@ -105,6 +105,10 @@ https://cgamesplay.com/post/2023/05/19/stop-using-em-in-media-queries/
 
 Use of bottom centre to position background image when the image has interesting content at the bottom
 
+Use of inset property
+
+Reverse media query for mobile menu i.e. put more complex mobile code in a max width query
+
 ### Continued development
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
