@@ -55,4 +55,8 @@
     width: 3rem;
     aspect-ratio: 1;
   }
+
+  .primary-header .mobile-nav-toggle.open {
+    background-image: url(../assets/shared/icon-close.svg);
+  }
 }

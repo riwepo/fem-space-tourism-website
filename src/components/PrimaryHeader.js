@@ -19,7 +19,7 @@ function PrimaryHeader() {
       </div>
       <PrimaryNavigation isOpen={isMenuOpen} />
       <button
-        className="mobile-nav-toggle"
+        className={`mobile-nav-toggle ${isMenuOpen ? "open" : undefined}`}
         aria-controls="primary-navigation"
         aria-expanded="false"
         onClick={menuClickHandler}
