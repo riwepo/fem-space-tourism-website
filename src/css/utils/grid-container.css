@@ -4,9 +4,10 @@
   text-align: center;
   place-items: center;
   padding-inline: 1rem;
+  padding-bottom: 6rem;
 }
 
-.grid-container * {
+.grid-container p:not([class]) {
   max-width: 50ch;
 }
 
@@ -18,18 +19,5 @@
         2rem,
         1fr
       );
-  }
-
-  .grid-container > *:first-child {
-    grid-column: 2;
-  }
-
-  .grid-container > *:last-child {
-    grid-column: 3;
-  }
-
-  .grid-container--home {
-    padding-bottom: max(6rem, 15vh);
-    align-items: end;
   }
 }
