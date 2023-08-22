@@ -23,6 +23,12 @@ function TabList() {
       >
         Europa
       </button>
+      <button
+        aria-selected="false"
+        className="ff-sans-cond uppercase text-accent letter-spacing-2 bg-dark underline-indicator"
+      >
+        Titan
+      </button>
     </div>
   );
 }
