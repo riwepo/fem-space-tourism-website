@@ -7,13 +7,6 @@ import iconClose from "../assets/shared/icon-close.svg";
 import "./PrimaryHeader.css";
 import PrimaryNavigation from "./PrimaryNavigation";
 
-const mainNavSpec = [
-  { id: "00", label: "HOME", path: "/" },
-  { id: "01", label: "DESTINATION", path: "/destination" },
-  { id: "02", label: "CREW", path: "/crew" },
-  { id: "03", label: "TECHNOLOGY", path: "/technology" },
-];
-
 function PrimaryHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuClickHandler = (event) => {
@@ -29,6 +22,7 @@ function PrimaryHeader() {
         <button
           className="mobile-nav-toggle"
           aria-controls="primary-navigation"
+          aria-expanded="false"
         >
           <span className="sr-only">Menu</span>
           <img
