@@ -22,7 +22,7 @@ function PrimaryNavigation({ className, isOpen }) {
                 to={item.path}
                 className="ff-sans-cond letter-spacing-2 uppercase text-light underline-indicator"
               >
-                <span>{item.id}</span>
+                <span aria-hidden="true">{item.id}</span>
                 {item.label}
               </NavLink>
             </li>
