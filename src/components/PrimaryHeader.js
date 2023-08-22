@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 
+import PrimaryNavigation from "./PrimaryNavigation";
+
 import logo from "../assets/shared/logo.svg";
-import iconHamburger from "../assets/shared/icon-hamburger.svg";
-import iconClose from "../assets/shared/icon-close.svg";
 
 import "./PrimaryHeader.css";
-import PrimaryNavigation from "./PrimaryNavigation";
 
 function PrimaryHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuClickHandler = (event) => {
     setIsMenuOpen((current) => !current);
+    console.log("click");
   };
   return (
     <header className="primary-header flex">
@@ -18,32 +18,14 @@ function PrimaryHeader() {
         <img className="logo" src={logo} alt="space logo" />
       </div>
       <PrimaryNavigation isOpen={isMenuOpen} />
-      {!isMenuOpen && (
-        <button
-          className="mobile-nav-toggle"
-          aria-controls="primary-navigation"
-          aria-expanded="false"
-        >
-          <span className="sr-only">Menu</span>
-          <img
-            className="menu"
-            src={iconHamburger}
-            alt="hamgurger menu"
-            onClick={menuClickHandler}
-          />
-        </button>
-      )}
-      {isMenuOpen && (
-        <button>
-          <span className="sr-only">Menu</span>
-          <img
-            className="menu"
-            src={iconClose}
-            alt="close menu"
-            onClick={menuClickHandler}
-          />
-        </button>
-      )}
+      <button
+        className="mobile-nav-toggle"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+        onClick={menuClickHandler}
+      >
+        <span className="sr-only">Menu</span>
+      </button>
     </header>
   );
 }

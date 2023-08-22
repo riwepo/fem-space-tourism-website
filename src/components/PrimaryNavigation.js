@@ -11,13 +11,13 @@ const navSpec = [
   { id: "03", label: "TECHNOLOGY", path: "/technology" },
 ];
 
-function PrimaryNavigation() {
+function PrimaryNavigation({ isOpen }) {
   return (
     <nav>
-      <ul className="primary-navigation flex">
+      <ul className={`primary-navigation flex ${isOpen ? "open" : undefined}`}>
         {navSpec.map((item) => {
           return (
-            <li>
+            <li key={item.id}>
               <NavLink
                 to={item.path}
                 className="ff-sans-cond letter-spacing-2 uppercase text-light underline-indicator"
