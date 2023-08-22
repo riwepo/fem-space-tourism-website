@@ -27,6 +27,7 @@ function PrimaryHeader() {
       <PrimaryNavigation isOpen={isMenuOpen} />
       {!isMenuOpen && (
         <button className="hamburger-button">
+          <span className="sr-only">Menu</span>
           <img
             className="menu"
             src={iconHamburger}
@@ -37,6 +38,7 @@ function PrimaryHeader() {
       )}
       {isMenuOpen && (
         <button>
+          <span className="sr-only">Menu</span>
           <img
             className="menu"
             src={iconClose}
