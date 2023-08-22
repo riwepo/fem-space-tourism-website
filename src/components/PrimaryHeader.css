@@ -39,5 +39,23 @@
   }
 }
 
-@media (min-width: 560px) and (max-width: 720px) {
+@media (min-width: 720px) {
+  .primary-header {
+    position: relative;
+  }
+
+  .primary-header .nav {
+    order: 2;
+  }
+
+  .primary-header::after {
+    content: "";
+    display: block;
+    position: relative;
+    height: 1px;
+    background: rgba(var(--clr-white), 25%);
+    width: 100%;
+    order: 1;
+    margin-right: -2.4rem;
+  }
 }

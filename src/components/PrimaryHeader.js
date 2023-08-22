@@ -17,7 +17,11 @@ function PrimaryHeader() {
       <div>
         <img className="logo" src={logo} alt="space logo" />
       </div>
-      <PrimaryNavigation isOpen={isMenuOpen} aria-expanded={isMenuOpen} />
+      <PrimaryNavigation
+        isOpen={isMenuOpen}
+        aria-expanded={isMenuOpen}
+        className="nav"
+      />
       <button
         className="mobile-nav-toggle"
         data-is-menu-open={isMenuOpen}

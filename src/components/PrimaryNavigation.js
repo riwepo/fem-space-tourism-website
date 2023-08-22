@@ -11,9 +11,9 @@ const navSpec = [
   { id: "03", label: "TECHNOLOGY", path: "/technology" },
 ];
 
-function PrimaryNavigation({ isOpen }) {
+function PrimaryNavigation({ className, isOpen }) {
   return (
-    <nav>
+    <nav className={className}>
       <ul className="primary-navigation flex" data-is-open={isOpen}>
         {navSpec.map((item) => {
           return (

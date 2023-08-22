@@ -1,5 +1,5 @@
 .primary-navigation {
-  --gap: 2rem;
+  --gap: clamp(2.4rem, 5vw, 8rem);
   --underline-gap: 2rem;
   list-style: none;
   padding: 0;
@@ -12,6 +12,15 @@
     background: rgba(var(--clr-white), 2%);
     backdrop-filter: blur(5rem);
   }
+}
+
+.primary-navigation a {
+  text-decoration: none;
+}
+
+.primary-navigation a > span {
+  font-weight: 700;
+  margin-right: 0.5em;
 }
 
 @media (max-width: 560px) {
@@ -37,11 +46,20 @@
   }
 }
 
-.primary-navigation a {
-  text-decoration: none;
+@media (min-width: 560px) {
+  .primary-navigation {
+    padding-inline: clamp(3rem, 5vw, 10rem);
+  }
 }
 
-.primary-navigation a > span {
-  font-weight: 700;
-  margin-right: 0.5em;
+@media (min-width: 560px) and (max-width: 719.999px) {
+  .primary-navigation a > span {
+    display: none;
+  }
+}
+
+@media (min-width: 720px) {
+  .primary-navigation {
+    margin-block: 3.2rem;
+  }
 }
