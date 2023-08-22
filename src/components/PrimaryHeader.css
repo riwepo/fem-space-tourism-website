@@ -35,3 +35,9 @@
     display: none;
   }
 } */
+
+.primary-header .hamburger-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}

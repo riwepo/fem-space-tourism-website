@@ -26,20 +26,24 @@ function PrimaryHeader() {
       </div>
       <PrimaryNavigation isOpen={isMenuOpen} />
       {!isMenuOpen && (
-        <img
-          className="menu"
-          src={iconHamburger}
-          alt="hamgurger menu"
-          onClick={menuClickHandler}
-        />
+        <button className="hamburger-button">
+          <img
+            className="menu"
+            src={iconHamburger}
+            alt="hamgurger menu"
+            onClick={menuClickHandler}
+          />
+        </button>
       )}
       {isMenuOpen && (
-        <img
-          className="menu"
-          src={iconClose}
-          alt="close menu"
-          onClick={menuClickHandler}
-        />
+        <button>
+          <img
+            className="menu"
+            src={iconClose}
+            alt="close menu"
+            onClick={menuClickHandler}
+          />
+        </button>
       )}
     </header>
   );
