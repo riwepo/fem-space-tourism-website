@@ -14,7 +14,7 @@ const navSpec = [
 function PrimaryNavigation() {
   return (
     <nav>
-      <ul className="primary-navigation flex underline-indicators">
+      <ul className="primary-navigation flex">
         {navSpec.map((item) => {
           return (
             <li>
