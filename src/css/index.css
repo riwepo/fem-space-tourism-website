@@ -197,6 +197,7 @@ body {
   background-color: rgb(var(--clr-black));
   color: rgb(var(--clr-white));
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 h1,
