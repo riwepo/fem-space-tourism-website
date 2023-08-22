@@ -26,7 +26,10 @@ function PrimaryHeader() {
       </div>
       <PrimaryNavigation isOpen={isMenuOpen} />
       {!isMenuOpen && (
-        <button className="hamburger-button">
+        <button
+          className="mobile-nav-toggle"
+          aria-controls="primary-navigation"
+        >
           <span className="sr-only">Menu</span>
           <img
             className="menu"
