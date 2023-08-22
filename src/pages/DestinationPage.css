@@ -1,12 +1,88 @@
-.destination-page h2 {
-  text-align: center;
+.background.background--destination {
+  background-size: cover;
+  background-position: bottom center;
+  background-image: url(../assets/destination/background-destination-mobile.jpg);
 }
 
-.destination-page p {
-  text-align: center;
+.grid-container--destination {
+  --flow-space: 3.2rem;
+  grid-template-areas:
+    "title"
+    "image"
+    "tabs"
+    "content";
 }
 
-.destination-page .details {
-  justify-content: center;
-  flex-direction: row;
+.grid-container--destination > .numbered-title {
+  grid-area: title;
+}
+
+.grid-container--destination > img {
+  grid-area: image;
+  max-width: 60%;
+}
+
+.grid-container--destination > .tab-list {
+  grid-area: tabs;
+}
+
+.grid-container--destination > .destination-info {
+  grid-area: content;
+}
+
+.destination-meta {
+  border-top: 1px solid rgba(var(--clr-white), 25%);
+  flex-direction: column;
+  padding-top: 4rem;
+  margin-top: 4rem;
+  align-items: center;
+}
+
+.destination-meta p {
+  font-size: 2.8rem;
+}
+
+@media (min-width: 560px) {
+  .background.background--destination {
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../assets/destination/background-destination-tablet.jpg);
+  }
+
+  .grid-container--destination > .numbered-title {
+    justify-self: start;
+    padding-left: 2rem;
+    margin-top: 3rem;
+  }
+
+  .destination-meta {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 720px) {
+  .background.background--destination {
+    background-size: cover;
+    background-position: right center;
+    background-image: url(../assets/destination/background-destination-desktop.jpg);
+  }
+
+  .grid-container--destination {
+    justify-items: start;
+    align-content: start;
+    grid-template-areas:
+      ". title title ."
+      ". image tabs ."
+      ". image content .";
+  }
+
+  .grid-container--destination > img {
+    max-width: 90%;
+  }
+
+  .destination-meta {
+    --gap: min(8vw, 9rem);
+    justify-content: start;
+  }
 }
