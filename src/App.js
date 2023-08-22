@@ -60,7 +60,7 @@ const designSystemRouter = createBrowserRouter(
 );
 
 function App() {
-  return <RouterProvider router={designSystemRouter} />;
+  return <RouterProvider router={router} />;
 }
 
 export default App;
