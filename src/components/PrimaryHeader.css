@@ -52,11 +52,17 @@
     top: 3rem;
     background-image: url(../assets/shared/icon-hamburger.svg);
     background-repeat: no-repeat;
+    background-position: center;
     width: 3rem;
     aspect-ratio: 1;
   }
 
   .primary-header .mobile-nav-toggle[data-is-menu-open="true"] {
     background-image: url(../assets/shared/icon-close.svg);
+  }
+
+  .primary-header .mobile-nav-toggle:focus-visible {
+    outline: 5px solid white;
+    outline-offset: 5px;
   }
 }
