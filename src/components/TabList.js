@@ -2,21 +2,21 @@ import React from "react";
 
 import "./TabList.css";
 
-function TabList({ items, activeTabIndex, onTabChange }) {
+function TabList({ items, activeTabIndex, onIndexChange }) {
   const clickHandler = (event) => {
     const index = +event.target.dataset.tabIndex;
-    onTabChange(index);
+    onIndexChange(index);
   };
   const keyDownHandler = (event) => {
     const LEFT_KEY = 37;
     const RIGHT_KEY = 39;
     if (event.keyCode === LEFT_KEY && activeTabIndex > 0) {
-      onTabChange(activeTabIndex - 1);
+      onIndexChange(activeTabIndex - 1);
     } else if (
       event.keyCode === RIGHT_KEY &&
       activeTabIndex < items.length - 1
     ) {
-      onTabChange(activeTabIndex + 1);
+      onIndexChange(activeTabIndex + 1);
     }
   };
   return (

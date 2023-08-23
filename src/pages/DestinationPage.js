@@ -64,7 +64,7 @@ function DestinationPage() {
         <TabList
           items={destinationsData}
           activeTabIndex={activeTabIndex}
-          onTabChange={tabChangeHandler}
+          onIndexChange={tabChangeHandler}
         />
         <article className="destination-info flow">
           <h2 className="ff-serif fs-800 uppercase">{destinationData.name}</h2>

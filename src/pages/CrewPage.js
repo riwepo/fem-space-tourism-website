@@ -37,16 +37,6 @@ const crewData = [
   },
 ];
 
-const getMatchingCrewMember = (data, id) => {
-  const crewMembers = data.filter((item) => item.id.toLowerCase() === id);
-  if (crewMembers.length !== 1) {
-    throw new Error(
-      `${crewMembers.length} matching crew members found for path segment '${id}'`
-    );
-  }
-  return crewMembers[0];
-};
-
 const getImageKeyFromName = (name) => {
   const lowerCase = name.toLowerCase();
   const spacesToDash = lowerCase.replace(" ", "-");
@@ -54,13 +44,13 @@ const getImageKeyFromName = (name) => {
 };
 
 function CrewPage() {
-  const [activeItemId, setActiveItemId] = useState("1");
-  const crewMemberData = getMatchingCrewMember(crewData, activeItemId);
+  const [activeItemIndex, setActiveItemIndex] = useState(0);
+  const crewMemberData = crewData[activeItemIndex];
   const imageKey = getImageKeyFromName(crewMemberData.name);
   const imagePaths = getImagePaths("crew", imageKey);
 
-  const itemChangeHandler = (id) => {
-    setActiveItemId(id);
+  const indexChangeHandler = (index) => {
+    setActiveItemIndex(index);
   };
   return (
     <>
@@ -71,8 +61,8 @@ function CrewPage() {
         </h1>
         <DotIndicators
           items={crewData}
-          activeItemId={activeItemId}
-          onItemChange={itemChangeHandler}
+          activeItemIndex={activeItemIndex}
+          onIndexChange={indexChangeHandler}
         />
         <article className="crew-details flow">
           <header className="flow flow--space-small">
