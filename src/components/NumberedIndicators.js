@@ -2,18 +2,17 @@ import React from "react";
 
 import "./NumberedIndicators.css";
 
-function NumberedIndicators() {
+function NumberedIndicators({ items, activeItemIndex, onIndexChange }) {
   return (
     <div className="numbered-indicators grid">
-      <button aria-selected="true">
-        <span className="sr-only">Slide title</span>1
-      </button>
-      <button aria-selected="false">
-        <span className="sr-only">Slide title</span>2
-      </button>
-      <button aria-selected="false">
-        <span className="sr-only">Slide title</span>3
-      </button>
+      {items.map((item, index) => {
+        return (
+          <button aria-selected={index === activeItemIndex} key={item.id}>
+            <span className="sr-only">{item.name}</span>
+            {index + 1}
+          </button>
+        );
+      })}
     </div>
   );
 }
