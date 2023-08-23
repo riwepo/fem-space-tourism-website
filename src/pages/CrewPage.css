@@ -31,6 +31,10 @@
   grid-area: content;
 }
 
+.grid-container--crew > .crew-details > h2 {
+  color: rgba(var(--clr-white), 50%);
+}
+
 .crew-meta {
   border-top: 1px solid rgba(var(--clr-white), 25%);
   flex-direction: column;
