@@ -77,7 +77,10 @@ function CrewPage() {
             third time as commander of Crew Dragon Demo-2.
           </p>
         </article>
-        <img src={imagePaths.png} alt="crew member"></img>
+        <picture>
+          <source srcSet={imagePaths.webp} type="image/webp" />
+          <img src={imagePaths.png} alt="crew member"></img>
+        </picture>
       </div>
     </>
   );

@@ -17,7 +17,7 @@
   grid-area: title;
 }
 
-.grid-container--crew > img {
+.grid-container--crew > picture {
   grid-area: image;
   max-width: 80%;
   border-bottom: 1px solid rgba(var(--clr-white), 10%);
@@ -91,7 +91,7 @@
     justify-self: start;
   }
 
-  .grid-container--crew > img {
+  .grid-container--crew > picture {
     align-self: end;
   }
 }
