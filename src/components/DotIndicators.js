@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 
 import "./DotIndicators.css";
 
 function DotIndicators({ items, activeItemIndex, onIndexChange }) {
+  const dotRefs = useRef([]);
+  useEffect(() => {
+    dotRefs.current[activeItemIndex].focus();
+  }, [activeItemIndex]);
   const clickHandler = (event) => {
     const index = +event.target.dataset.itemIndex;
     onIndexChange(index);
@@ -28,6 +32,7 @@ function DotIndicators({ items, activeItemIndex, onIndexChange }) {
             aria-selected={index === activeItemIndex}
             data-item-index={index}
             onClick={clickHandler}
+            ref={(element) => (dotRefs.current[index] = element)}
           >
             <span className="sr-only">The {item.role}</span>
           </button>

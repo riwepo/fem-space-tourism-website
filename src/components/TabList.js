@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 
 import "./TabList.css";
 
 function TabList({ items, activeTabIndex, onIndexChange }) {
+  const tabRefs = useRef([]);
+  useEffect(() => {
+    tabRefs.current[activeTabIndex].focus();
+  }, [activeTabIndex]);
   const clickHandler = (event) => {
     const index = +event.target.dataset.tabIndex;
     onIndexChange(index);
@@ -29,6 +33,7 @@ function TabList({ items, activeTabIndex, onIndexChange }) {
             className="ff-sans-cond uppercase text-accent letter-spacing-2 underline-indicator"
             data-tab-index={index}
             onClick={clickHandler}
+            ref={(element) => (tabRefs.current[index] = element)}
           >
             {item.name}
           </button>
