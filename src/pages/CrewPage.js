@@ -61,7 +61,7 @@ function CrewPage() {
   return (
     <>
       <div className="background background--crew"></div>
-      <div className="grid-container-xxxx grid-container--crew flow">
+      <div className="grid-container grid-container--crew flow">
         <h1 className="numbered-title">
           <span aria-hidden="true">01</span> Meet your crew
         </h1>
