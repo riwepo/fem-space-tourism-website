@@ -11,15 +11,15 @@ import "../css/utils/underline-indicator.css";
 import "./DesignSystemPage.css";
 
 const dotIndicatorData = [
-  { id: 0, role: "page title", isActive: true },
-  { id: 1, role: "page title", isActive: false },
-  { id: 2, role: "page title", isActive: false },
+  { id: "0", role: "page title" },
+  { id: "1", role: "page title" },
+  { id: "2", role: "page title" },
 ];
 const tabsData = [
-  { id: 0, name: "Moon", isActive: true },
-  { id: 0, name: "Mars", isActive: false },
-  { id: 0, name: "Europa", isActive: false },
-  { id: 0, name: "Titan", isActive: false },
+  { id: "0", name: "Moon" },
+  { id: "1", name: "Mars" },
+  { id: "2", name: "Europa" },
+  { id: "3", name: "Titan" },
 ];
 
 function DesignSystemPage() {
@@ -181,7 +181,7 @@ function DesignSystemPage() {
           <LargeButton className={undefined} />
 
           <div className="flow">
-            <TabList items={tabsData} />
+            <TabList items={tabsData} activeTabId="0" onTabChange={null} />
             <DotIndicators items={dotIndicatorData} />
             <NumberedIndicators />
           </div>
