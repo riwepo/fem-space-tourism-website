@@ -2,20 +2,32 @@ import React from "react";
 
 import "./TabList.css";
 
-function TabList({ items, activeTabId, onTabChange }) {
+function TabList({ items, activeTabIndex, onTabChange }) {
   const clickHandler = (event) => {
-    const id = event.target.dataset.id;
-    onTabChange(id);
+    const index = +event.target.dataset.tabIndex;
+    onTabChange(index);
+  };
+  const keyDownHandler = (event) => {
+    const LEFT_KEY = 37;
+    const RIGHT_KEY = 39;
+    if (event.keyCode === LEFT_KEY && activeTabIndex > 0) {
+      onTabChange(activeTabIndex - 1);
+    } else if (
+      event.keyCode === RIGHT_KEY &&
+      activeTabIndex < items.length - 1
+    ) {
+      onTabChange(activeTabIndex + 1);
+    }
   };
   return (
-    <div className="tab-list flex">
-      {items.map((item) => {
+    <div className="tab-list flex" role="tablist" onKeyDown={keyDownHandler}>
+      {items.map((item, index) => {
         return (
           <button
             key={item.id}
-            aria-selected={item.id === activeTabId}
+            aria-selected={index === activeTabIndex}
             className="ff-sans-cond uppercase text-accent letter-spacing-2 underline-indicator"
-            data-id={item.id}
+            data-tab-index={index}
             onClick={clickHandler}
           >
             {item.name}
