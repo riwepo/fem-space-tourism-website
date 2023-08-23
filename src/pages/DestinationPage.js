@@ -72,7 +72,7 @@ function DestinationPage() {
         </h1>
         <img src={imagePath} alt="the moon"></img>
         <TabList items={destinationsData} />
-        <article className="destination-info">
+        <article className="destination-info flow">
           <h2 className="ff-serif fs-800 uppercase">{destinationData.name}</h2>
           <p>{destinationData.description}</p>
           <div className="destination-meta flex">
