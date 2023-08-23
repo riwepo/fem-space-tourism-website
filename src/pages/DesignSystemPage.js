@@ -10,6 +10,12 @@ import "../css/utils/numbered-title.css";
 import "../css/utils/underline-indicator.css";
 import "./DesignSystemPage.css";
 
+const dotIndicatorData = [
+  { id: 0, role: "page title", isActive: true },
+  { id: 1, role: "page title", isActive: false },
+  { id: 2, role: "page title", isActive: false },
+];
+
 function DesignSystemPage() {
   return (
     <div className="container">
@@ -162,7 +168,7 @@ function DesignSystemPage() {
         </h2>
 
         <div>
-          <PrimaryNavigation />
+          <PrimaryNavigation className={undefined} isOpen={false} />
         </div>
 
         <div className="flex" style={{ marginTop: "5rem" }}>
@@ -170,7 +176,7 @@ function DesignSystemPage() {
 
           <div className="flow">
             <TabList />
-            <DotIndicators />
+            <DotIndicators items={dotIndicatorData} />
             <NumberedIndicators />
           </div>
         </div>
