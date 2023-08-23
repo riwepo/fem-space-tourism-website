@@ -181,7 +181,7 @@ function DesignSystemPage() {
           <LargeButton className={undefined} />
 
           <div className="flow">
-            <TabList items={tabsData} activeTabId="0" onTabChange={null} />
+            <TabList items={tabsData} activeTabIndex={0} onTabChange={null} />
             <DotIndicators items={dotIndicatorData} />
             <NumberedIndicators />
           </div>

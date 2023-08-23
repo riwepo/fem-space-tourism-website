@@ -42,23 +42,13 @@ const destinationsData = [
   },
 ];
 
-const getMatchingDestination = (data, id) => {
-  const destinations = data.filter((item) => item.id === id);
-  if (destinations.length !== 1) {
-    throw new Error(
-      `${destinations.length} matching destinations found for id '${id}'`
-    );
-  }
-  return destinations[0];
-};
-
 function DestinationPage() {
-  const [activeTabId, setActiveTabId] = useState("1");
-  const destinationData = getMatchingDestination(destinationsData, activeTabId);
+  const [activeTabIndex, setActiveTabIndex] = useState(0);
+  const destinationData = destinationsData[activeTabIndex];
   const imageKey = destinationData.name.toLowerCase();
   const imagePaths = getImagePaths("destination", imageKey);
-  const tabChangeHandler = (id) => {
-    setActiveTabId(id);
+  const tabChangeHandler = (index) => {
+    setActiveTabIndex(index);
   };
   return (
     <>
@@ -73,7 +63,7 @@ function DestinationPage() {
         </picture>
         <TabList
           items={destinationsData}
-          activeTabId={activeTabId}
+          activeTabIndex={activeTabIndex}
           onTabChange={tabChangeHandler}
         />
         <article className="destination-info flow">
