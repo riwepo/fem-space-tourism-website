@@ -15,6 +15,12 @@ const dotIndicatorData = [
   { id: 1, role: "page title", isActive: false },
   { id: 2, role: "page title", isActive: false },
 ];
+const tabsData = [
+  { id: 0, name: "Moon", isActive: true },
+  { id: 0, name: "Mars", isActive: false },
+  { id: 0, name: "Europa", isActive: false },
+  { id: 0, name: "Titan", isActive: false },
+];
 
 function DesignSystemPage() {
   return (
@@ -175,7 +181,7 @@ function DesignSystemPage() {
           <LargeButton className={undefined} />
 
           <div className="flow">
-            <TabList />
+            <TabList items={tabsData} />
             <DotIndicators items={dotIndicatorData} />
             <NumberedIndicators />
           </div>
