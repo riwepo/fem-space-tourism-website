@@ -21,6 +21,11 @@ const tabsData = [
   { id: "2", name: "Europa" },
   { id: "3", name: "Titan" },
 ];
+const numberedItemsData = [
+  { id: "0", name: "Launch vehicle" },
+  { id: "1", name: "Spaceport" },
+  { id: "2", name: "Space capsule" },
+];
 
 function DesignSystemPage() {
   return (
@@ -187,7 +192,11 @@ function DesignSystemPage() {
               activeItemIndex={0}
               onIndexChange={null}
             />
-            <NumberedIndicators />
+            <NumberedIndicators
+              items={numberedItemsData}
+              activeItemIndex={0}
+              onIndexChange={null}
+            />
           </div>
         </div>
       </section>
