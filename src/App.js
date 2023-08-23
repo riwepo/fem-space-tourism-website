@@ -1,15 +1,9 @@
 import React from "react";
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Navigate,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import RootLayout from "./pages/RootLayout";
 import HomePage from "./pages/HomePage";
-import DestinationLayout from "./pages/DestinationLayout";
 import DestinationPage from "./pages/DestinationPage";
-import CrewLayout from "./pages/CrewLayout";
 import CrewPage from "./pages/CrewPage";
 import TechnologyPage from "./pages/TechnologyPage";
 import ErrorPage from "./pages/ErrorPage";
