@@ -17,7 +17,7 @@
   grid-area: title;
 }
 
-.grid-container--destination > img {
+.grid-container--destination > picture {
   grid-area: image;
   max-width: 60%;
 }
