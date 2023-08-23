@@ -2,7 +2,7 @@ import React from "react";
 
 import TabList from "../components/TabList";
 
-import { getImagePath } from "../utils";
+import { getImagePaths } from "../utils";
 
 import "../css/utils/numbered-title.css";
 import "./DestinationPage.css";
@@ -62,7 +62,7 @@ function DestinationPage() {
     destinationsData,
     destinationId
   );
-  const imagePath = getImagePath("destination", destinationId);
+  const imagePaths = getImagePaths("destination", destinationId);
   return (
     <>
       <div className="background background--destination"></div>
@@ -70,7 +70,10 @@ function DestinationPage() {
         <h1 className="numbered-title">
           <span aria-hidden="true">01</span> Pick your destination
         </h1>
-        <img src={imagePath} alt="the moon"></img>
+        <picture>
+          <source srcSet={imagePaths.webp} type="image/webp" />
+          <img src={imagePaths.png} alt="the moon"></img>
+        </picture>
         <TabList items={destinationsData} />
         <article className="destination-info flow">
           <h2 className="ff-serif fs-800 uppercase">{destinationData.name}</h2>

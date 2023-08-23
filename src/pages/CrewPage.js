@@ -2,7 +2,7 @@ import React from "react";
 
 import DotIndicators from "../components/DotIndicators";
 
-import { getImagePath } from "../utils";
+import { getImagePaths } from "../utils";
 
 import "./CrewPage.css";
 
@@ -57,7 +57,7 @@ function CrewPage() {
   const crewMemberId = "01";
   const crewMemberData = getMatchingCrewMember(crewData, crewMemberId);
   const imageKey = getImageKeyFromName(crewMemberData.name);
-  const imagePath = getImagePath("crew", imageKey);
+  const imagePaths = getImagePaths("crew", imageKey);
   return (
     <>
       <div className="background background--crew"></div>
@@ -77,30 +77,10 @@ function CrewPage() {
             third time as commander of Crew Dragon Demo-2.
           </p>
         </article>
-        <img src={imagePath} alt="crew member"></img>
+        <img src={imagePaths.png} alt="crew member"></img>
       </div>
     </>
   );
-
-  // return (
-  //   <div className="crew-page centered-grid">
-  //     <div className="content centered-grid-c2">
-  //       <h2 className="ff-serif fs-700 text-light uppercase">
-  //         <span className="fs-600 d-block">{crewMemberData.role}</span>{" "}
-  //         {crewMemberData.name}
-  //       </h2>
-  //       <p className="ff-sans-normal fs-400 text-accent">
-  //         {crewMemberData.bio}
-  //       </p>
-  //     </div>
-  //     <CrewNavigation className="navigation centered-grid-c2" />
-  //     <img
-  //       src={imagePath}
-  //       alt={crewMemberData.name}
-  //       className="centered-grid-c3"
-  //     />
-  //   </div>
-  // );
 }
 
 export default CrewPage;

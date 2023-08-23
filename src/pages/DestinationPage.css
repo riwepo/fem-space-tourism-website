@@ -77,7 +77,7 @@
       ". image content .";
   }
 
-  .grid-container--destination > img {
+  .grid-container--destination > picture {
     max-width: 90%;
   }
 
