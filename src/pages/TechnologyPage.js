@@ -37,7 +37,7 @@ function TechnologyPage() {
   const [activeItemIndex, setActiveItemIndex] = useState(0);
   const techItemData = techData[activeItemIndex];
   const imageKey = getImageKeyFromName(techItemData.name);
-  const imagePaths = getImagePaths("tech", imageKey);
+  const imagePaths = getImagePaths("technology", imageKey, "landscape");
 
   const indexChangeHandler = (index) => {
     setActiveItemIndex(index);
@@ -50,8 +50,8 @@ function TechnologyPage() {
           <span aria-hidden="true">03</span> Space launch 101
         </h1>
         <picture>
-          <source srcSet={imagePaths.webp} type="image/webp" />
-          <img src={imagePaths.png} alt="tech member"></img>
+          <source srcSet={imagePaths.jpg} type="image/jpg" />
+          <img src={imagePaths.jpg} alt="technology item"></img>
         </picture>
         <DotIndicators
           items={techData}
