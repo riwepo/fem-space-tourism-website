@@ -49,7 +49,6 @@ const getMatchingDestination = (data, name) => {
 };
 
 function DestinationPage() {
-  //const params = useParams();
   const destinationId = "moon"; // params.id;
   const destinationData = getMatchingDestination(
     destinationsData,
@@ -79,58 +78,9 @@ function DestinationPage() {
             </div>
           </div>
         </article>
-
-        {/* <div>
-          <h1 className="ff-sans-cond fs-500 text-accent uppercase letter-spacing-1">
-            So, you want to travel to{" "}
-            <span className="ff-serif fs-900 text-light uppercase d-block">
-              Space
-            </span>
-          </h1>
-          <p>
-            Let’s face it; if you want to go to space, you might as well
-            genuinely go to outer space and not hover kind of on the edge of it.
-            Well sit back, and relax because we’ll give you a truly out of this
-            world experience! Explore
-          </p>
-        </div>
-        <LargeButton className="large-button" /> */}
       </div>
     </>
   );
-  // return (
-  //   <div className="destination-page centered-grid">
-  //     <img
-  //       src={imagePath}
-  //       alt={destinationData.name}
-  //       className="centered-grid-c2"
-  //     />
-  //     <div className="centered-grid-c3">
-  //       <h2 className="ff-serif uppercase fs-800">{destinationData.name}</h2>
-  //       <p className="ff-sans-normal fs-400 text-accent">
-  //         {destinationData.description}
-  //       </p>
-  //       <div className="details flex">
-  //         <div>
-  //           <p className="ff-serif-cond fs-200 text-accent uppercase letter-spacing-3">
-  //             Avg. distance
-  //           </p>
-  //           <p className="ff-serif fs-500 uppercase">
-  //             {destinationData.distance}
-  //           </p>
-  //         </div>
-  //         <div>
-  //           <p className="ff-serif-cond fs-200 text-accent uppercase letter-spacing-3">
-  //             Est. travel time
-  //           </p>
-  //           <p className="ff-serif fs-500 uppercase">
-  //             {destinationData.travel}
-  //           </p>
-  //         </div>
-  //       </div>
-  //     </div>
-  //   </div>
-  // );
 }
 
 export default DestinationPage;
