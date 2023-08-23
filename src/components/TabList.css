@@ -1,3 +1,7 @@
 .tab-list {
   --gap: 2rem;
 }
+
+.tab-list > button {
+  background-color: transparent;
+}

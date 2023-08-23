@@ -2,33 +2,20 @@ import React from "react";
 
 import "./TabList.css";
 
-function TabList() {
+function TabList({ items }) {
   return (
     <div className="tab-list flex">
-      <button
-        aria-selected="true"
-        className="ff-sans-cond uppercase text-accent letter-spacing-2 bg-dark underline-indicator"
-      >
-        Moon
-      </button>
-      <button
-        aria-selected="false"
-        className="ff-sans-cond uppercase text-accent letter-spacing-2 bg-dark underline-indicator"
-      >
-        Mars
-      </button>
-      <button
-        aria-selected="false"
-        className="ff-sans-cond uppercase text-accent letter-spacing-2 bg-dark underline-indicator"
-      >
-        Europa
-      </button>
-      <button
-        aria-selected="false"
-        className="ff-sans-cond uppercase text-accent letter-spacing-2 bg-dark underline-indicator"
-      >
-        Titan
-      </button>
+      {items.map((item) => {
+        return (
+          <button
+            key={item.id}
+            aria-selected={item.isActive}
+            className="ff-sans-cond uppercase text-accent letter-spacing-2 underline-indicator"
+          >
+            {item.name}
+          </button>
+        );
+      })}
     </div>
   );
 }
