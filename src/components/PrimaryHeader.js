@@ -10,7 +10,6 @@ function PrimaryHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuClickHandler = (event) => {
     setIsMenuOpen((current) => !current);
-    console.log("click");
   };
   return (
     <header className="primary-header flex">
