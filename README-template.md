@@ -117,6 +117,8 @@ focus-visible attribute
 
 use of 'and' in media query to target just the tablet screen size
 
+shift focus between tabs and dots when seleted index changes, using useRef, a ref array and useEffect
+
 ### Continued development
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
