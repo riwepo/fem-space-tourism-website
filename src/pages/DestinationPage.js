@@ -55,7 +55,7 @@ function DestinationPage() {
       <div className="background background--destination"></div>
       <div className="grid-container grid-container--destination flow">
         <h1 className="numbered-title">
-          <span aria-hidden="true">01</span> Pick your destination
+          <span aria-hidden="true">02</span> Pick your destination
         </h1>
         <picture>
           <source srcSet={imagePaths.webp} type="image/webp" />
