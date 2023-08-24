@@ -1,4 +1,5 @@
 .numbered-indicators {
+  justify-content: center;
   --gap: 2rem;
 }
 
@@ -11,6 +12,9 @@
   color: rgb(var(--clr-white));
   border: solid 0.1em rgba(var(--clr-white), 25%);
   background-color: rgb(var(--clr-black));
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .numbered-indicators > *:hover,
