@@ -53,21 +53,23 @@ function TechnologyPage() {
           <source srcSet={imagePaths.jpg} type="image/jpg" />
           <img src={imagePaths.jpg} alt="technology item"></img>
         </picture>
-        <article className="tech-details flow">
+        <article className="tech-details flex flow">
           <NumberedIndicators
             items={techData}
             activeItemIndex={activeItemIndex}
             onIndexChange={indexChangeHandler}
           />
-          <header className="flow flow--space-small">
-            <h2 className="ff-sans-cond fs-200 uppercase text-accent letter-spacing-3">
-              The terminology...
-            </h2>
-            <p className="fs-700 uppercase ff-serif">{techItemData.name}</p>
-          </header>
-          <p className="ff-sans-normal fs-400 text-accent">
-            {techItemData.description}
-          </p>
+          <div>
+            <header className="flow flow--space-small">
+              <p className="ff-sans-cond fs-200 uppercase text-accent letter-spacing-3">
+                The terminology...
+              </p>
+              <h2 className="fs-700 uppercase ff-serif">{techItemData.name}</h2>
+            </header>
+            <p className="ff-sans-normal fs-400 text-accent">
+              {techItemData.description}
+            </p>
+          </div>
         </article>
       </div>
     </>

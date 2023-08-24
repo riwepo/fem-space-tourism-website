@@ -9,8 +9,7 @@
   grid-template-areas:
     "title"
     "image"
-    "nav"
-    "content";
+    "article";
 }
 
 .grid-container--tech > .numbered-title {
@@ -26,16 +25,17 @@
   width: 100vw;
 }
 
-.grid-container--tech > .numbered-indicators {
-  grid-area: nav;
+.grid-container--tech > article {
+  grid-area: article;
+  flex-direction: column;
+}
+
+.grid-container--tech > article h2 {
+  white-space: nowrap;
 }
 
 .grid-container--tech .numbered-indicators > button {
   width: 4rem;
-}
-
-.grid-container--tech > .tech-details {
-  grid-area: content;
 }
 
 @media (min-width: 560px) {
@@ -52,7 +52,7 @@
   }
 }
 
-@media (min-widthxxx: 720px) {
+@media (min-width: 720px) {
   .background.background--tech {
     background-size: cover;
     background-position: right center;
@@ -64,15 +64,28 @@
     align-content: start;
     grid-template-areas:
       ". title title ."
-      ". content image ."
-      ". dots image .";
+      "article article image image";
   }
 
-  .grid-container--tech > .dot-indicators {
+  .grid-container--tech > picture {
+    grid-area: image;
+    margin-left: 0;
+  }
+
+  .grid-container--tech > article {
+    flex-direction: row;
+    --gap: 5rem;
+  }
+
+  .grid-container--tech > article .numbered-indicators {
+    flex-direction: column;
+  }
+
+  /* .grid-container--tech > .dot-indicators {
     justify-self: start;
   }
 
   .grid-container--tech > picture {
     align-self: end;
-  }
+  } */
 }
