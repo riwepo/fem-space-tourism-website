@@ -4,15 +4,12 @@
   background-image: url(../assets/technology/background-technology-mobile.jpg);
 }
 
-.grid-container--tech .numbered-indicators {
-}
-
 .grid-container--tech {
-  --flow-space: 3.2rem;
+  --flow-space: 2rem;
   grid-template-areas:
     "title"
     "image"
-    "dots"
+    "nav"
     "content";
 }
 
@@ -22,32 +19,23 @@
 
 .grid-container--tech > picture {
   grid-area: image;
-  max-width: 80%;
-  border-bottom: 1px solid rgba(var(--clr-white), 10%);
+  margin-inline: -1rem;
 }
 
-.grid-container--tech > .dot-indicators {
-  grid-area: dots;
+.grid-container--tech > picture > img {
+  width: 100vw;
+}
+
+.grid-container--tech > .numbered-indicators {
+  grid-area: nav;
+}
+
+.grid-container--tech .numbered-indicators > button {
+  width: 4rem;
 }
 
 .grid-container--tech > .tech-details {
   grid-area: content;
-}
-
-.grid-container--tech > .tech-details h2 {
-  color: rgba(var(--clr-white), 50%);
-}
-
-.tech-meta {
-  border-top: 1px solid rgba(var(--clr-white), 25%);
-  flex-direction: column;
-  padding-top: 4rem;
-  margin-top: 4rem;
-  align-items: center;
-}
-
-.tech-meta p {
-  font-size: 2.8rem;
 }
 
 @media (min-width: 560px) {
@@ -62,19 +50,9 @@
     padding-left: 2rem;
     margin-top: 3rem;
   }
-
-  .grid-container--tech {
-    grid-template-areas:
-      "title"
-      "content"
-      "dots"
-      "image";
-
-    padding-bottom: 0;
-  }
 }
 
-@media (min-width: 720px) {
+@media (min-widthxxx: 720px) {
   .background.background--tech {
     background-size: cover;
     background-position: right center;

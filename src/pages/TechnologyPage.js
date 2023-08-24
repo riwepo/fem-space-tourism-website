@@ -60,10 +60,14 @@ function TechnologyPage() {
         />
         <article className="tech-details flow">
           <header className="flow flow--space-small">
-            <h2 className="fs-600 ff-serif uppercase">The terminology...</h2>
+            <h2 className="ff-sans-cond fs-200 uppercase text-accent letter-spacing-3">
+              The terminology...
+            </h2>
             <p className="fs-700 uppercase ff-serif">{techItemData.name}</p>
           </header>
-          <p>{techItemData.description}</p>
+          <p className="ff-sans-normal fs-400 text-accent">
+            {techItemData.description}
+          </p>
         </article>
       </div>
     </>
