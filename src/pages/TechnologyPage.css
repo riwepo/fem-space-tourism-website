@@ -4,6 +4,9 @@
   background-image: url(../assets/technology/background-technology-mobile.jpg);
 }
 
+.grid-container--tech .numbered-indicators {
+}
+
 .grid-container--tech {
   --flow-space: 3.2rem;
   grid-template-areas:

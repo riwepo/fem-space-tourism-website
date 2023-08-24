@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import DotIndicators from "../components/DotIndicators";
+import NumberedIndicators from "../components/NumberedIndicators";
 
 import { getImagePaths } from "../utils";
 
@@ -53,7 +53,7 @@ function TechnologyPage() {
           <source srcSet={imagePaths.jpg} type="image/jpg" />
           <img src={imagePaths.jpg} alt="technology item"></img>
         </picture>
-        <DotIndicators
+        <NumberedIndicators
           items={techData}
           activeItemIndex={activeItemIndex}
           onIndexChange={indexChangeHandler}
