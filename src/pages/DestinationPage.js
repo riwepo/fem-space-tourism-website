@@ -43,12 +43,12 @@ const destinationsData = [
 ];
 
 function DestinationPage() {
-  const [activeTabIndex, setActiveTabIndex] = useState(0);
-  const destinationData = destinationsData[activeTabIndex];
+  const [activeItemIndex, setActiveItemIndex] = useState(0);
+  const destinationData = destinationsData[activeItemIndex];
   const imageKey = destinationData.name.toLowerCase();
   const imagePaths = getImagePaths("destination", imageKey);
   const tabChangeHandler = (index) => {
-    setActiveTabIndex(index);
+    setActiveItemIndex(index);
   };
   return (
     <>
@@ -63,7 +63,7 @@ function DestinationPage() {
         </picture>
         <TabList
           items={destinationsData}
-          activeTabIndex={activeTabIndex}
+          activeItemIndex={activeItemIndex}
           onIndexChange={tabChangeHandler}
         />
         <article className="destination-info flow">
