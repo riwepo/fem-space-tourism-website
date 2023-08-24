@@ -1,37 +1,29 @@
 import React, { useRef, useEffect } from "react";
 
+import { getClickHandler, getKeyDownHandler } from "../utils";
+
 import "./TabList.css";
 
-function TabList({ items, activeTabIndex, onIndexChange }) {
+function TabList({ items, activeItemIndex, onIndexChange }) {
   const tabRefs = useRef([]);
   useEffect(() => {
-    tabRefs.current[activeTabIndex].focus();
-  }, [activeTabIndex]);
-  const clickHandler = (event) => {
-    const index = +event.target.dataset.tabIndex;
-    onIndexChange(index);
-  };
-  const keyDownHandler = (event) => {
-    const LEFT_KEY = 37;
-    const RIGHT_KEY = 39;
-    if (event.keyCode === LEFT_KEY && activeTabIndex > 0) {
-      onIndexChange(activeTabIndex - 1);
-    } else if (
-      event.keyCode === RIGHT_KEY &&
-      activeTabIndex < items.length - 1
-    ) {
-      onIndexChange(activeTabIndex + 1);
-    }
-  };
+    tabRefs.current[activeItemIndex].focus();
+  }, [activeItemIndex]);
+  const clickHandler = getClickHandler(onIndexChange);
+  const keyDownHandler = getKeyDownHandler(
+    items.length,
+    activeItemIndex,
+    onIndexChange
+  );
   return (
     <div className="tab-list flex" role="tablist" onKeyDown={keyDownHandler}>
       {items.map((item, index) => {
         return (
           <button
             key={item.id}
-            aria-selected={index === activeTabIndex}
+            aria-selected={index === activeItemIndex}
             className="ff-sans-cond uppercase text-accent letter-spacing-2 underline-indicator"
-            data-tab-index={index}
+            data-item-index={index}
             onClick={clickHandler}
             ref={(element) => (tabRefs.current[index] = element)}
           >

@@ -1,5 +1,7 @@
 import React, { useRef, useEffect } from "react";
 
+import { getClickHandler, getKeyDownHandler } from "../utils";
+
 import "./DotIndicators.css";
 
 function DotIndicators({ items, activeItemIndex, onIndexChange }) {
@@ -7,22 +9,14 @@ function DotIndicators({ items, activeItemIndex, onIndexChange }) {
   useEffect(() => {
     dotRefs.current[activeItemIndex].focus();
   }, [activeItemIndex]);
-  const clickHandler = (event) => {
-    const index = +event.target.dataset.itemIndex;
-    onIndexChange(index);
-  };
-  const keyDownHandler = (event) => {
-    const LEFT_KEY = 37;
-    const RIGHT_KEY = 39;
-    if (event.keyCode === LEFT_KEY && activeItemIndex > 0) {
-      onIndexChange(activeItemIndex - 1);
-    } else if (
-      event.keyCode === RIGHT_KEY &&
-      activeItemIndex < items.length - 1
-    ) {
-      onIndexChange(activeItemIndex + 1);
-    }
-  };
+  const clickHandler = getClickHandler(onIndexChange);
+
+  const keyDownHandler = getKeyDownHandler(
+    items.length,
+    activeItemIndex,
+    onIndexChange
+  );
+
   return (
     <div className="dot-indicators flex" onKeyDown={keyDownHandler}>
       {items.map((item, index) => {
@@ -34,7 +28,7 @@ function DotIndicators({ items, activeItemIndex, onIndexChange }) {
             onClick={clickHandler}
             ref={(element) => (dotRefs.current[index] = element)}
           >
-            <span className="sr-only">The {item.role}</span>
+            <span className="sr-only">{item.role}</span>
           </button>
         );
       })}

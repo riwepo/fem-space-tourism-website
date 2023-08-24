@@ -1,5 +1,7 @@
 import React, { useRef, useEffect } from "react";
 
+import { getClickHandler, getKeyDownHandler } from "../utils";
+
 import "./NumberedIndicators.css";
 
 function NumberedIndicators({ items, activeItemIndex, onIndexChange }) {
@@ -7,22 +9,12 @@ function NumberedIndicators({ items, activeItemIndex, onIndexChange }) {
   useEffect(() => {
     buttonRefs.current[activeItemIndex].focus();
   }, [activeItemIndex]);
-  const clickHandler = (event) => {
-    const index = +event.target.dataset.itemIndex;
-    onIndexChange(index);
-  };
-  const keyDownHandler = (event) => {
-    const LEFT_KEY = 37;
-    const RIGHT_KEY = 39;
-    if (event.keyCode === LEFT_KEY && activeItemIndex > 0) {
-      onIndexChange(activeItemIndex - 1);
-    } else if (
-      event.keyCode === RIGHT_KEY &&
-      activeItemIndex < items.length - 1
-    ) {
-      onIndexChange(activeItemIndex + 1);
-    }
-  };
+  const clickHandler = getClickHandler(onIndexChange);
+  const keyDownHandler = getKeyDownHandler(
+    items.length,
+    activeItemIndex,
+    onIndexChange
+  );
   return (
     <div className="numbered-indicators flex" onKeyDown={keyDownHandler}>
       {items.map((item, index) => {
