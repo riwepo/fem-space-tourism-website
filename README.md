@@ -52,6 +52,8 @@ I learned a huge amount from this project.
 
 This was my first challenge using react-router-dom.js
 
+This was the first time I had built a site from a Figma design.
+
 It was challenging following along with Kevin, and then adapting what he was doing to react.
 
 The main learning was how Kevin develops a plug and play design system using CSS, with lots of small pieces that can be combined together.
