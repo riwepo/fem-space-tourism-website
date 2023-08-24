@@ -53,12 +53,12 @@ function TechnologyPage() {
           <source srcSet={imagePaths.jpg} type="image/jpg" />
           <img src={imagePaths.jpg} alt="technology item"></img>
         </picture>
-        <NumberedIndicators
-          items={techData}
-          activeItemIndex={activeItemIndex}
-          onIndexChange={indexChangeHandler}
-        />
         <article className="tech-details flow">
+          <NumberedIndicators
+            items={techData}
+            activeItemIndex={activeItemIndex}
+            onIndexChange={indexChangeHandler}
+          />
           <header className="flow flow--space-small">
             <h2 className="ff-sans-cond fs-200 uppercase text-accent letter-spacing-3">
               The terminology...
