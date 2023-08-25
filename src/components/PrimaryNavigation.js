@@ -11,10 +11,10 @@ const navSpec = [
   { id: "03", label: "TECHNOLOGY", path: "/technology" },
 ];
 
-function PrimaryNavigation({ className, isOpen }) {
+function PrimaryNavigation({ isOpen }) {
   return (
-    <nav className={className}>
-      <ul className="primary-navigation flex" data-is-open={isOpen}>
+    <nav className="primary-navigation" data-is-open={isOpen}>
+      <ul className="flex">
         {navSpec.map((item) => {
           return (
             <li key={item.id}>

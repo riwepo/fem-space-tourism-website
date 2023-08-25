@@ -7,6 +7,10 @@
   background: rgba(var(--clr-black), 95%);
 }
 
+.primary-navigation ul {
+  list-style: none;
+}
+
 @supports (backdrop-filter: blur(5rem)) {
   .primary-navigation {
     background: rgba(var(--clr-white), 2%);
@@ -35,6 +39,10 @@
     flex-direction: column;
     transform: translateX(100%);
     transition: transform 300ms ease-in-out;
+  }
+
+  .primary-navigation ul {
+    flex-direction: column;
   }
 
   .primary-navigation[data-is-open="true"] {
