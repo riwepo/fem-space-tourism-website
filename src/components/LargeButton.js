@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 import "./LargeButton.css";
 
-function LargeButton({ className }) {
+function LargeButton() {
   return (
-    <div className={`large-button ${className}`}>
+    <div className="large-button">
       <Link
         to="/destination"
         className="ff-serif fs-600 uppercase text-dark bg-light"

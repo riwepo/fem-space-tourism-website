@@ -25,7 +25,7 @@ function HomePage() {
             world experience! Explore
           </p>
         </div>
-        <LargeButton className="large-button" />
+        <LargeButton />
       </div>
     </>
   );
